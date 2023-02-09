@@ -15,6 +15,12 @@ export const ButtonSize = {
   lg: "py-3 px-6 text-xl",
 };
 
+export const PaginateColor = {
+  basic: "bg-gray-200 hover:bg-gray-300",
+  primary: "bg-purple-700 hover:bg-purple-900 text-white",
+  secondary: "bg-blue-700 hover:bg-blue-900 text-white",
+}
+
 export const FontFamily = {
   Default: "font-sans",
   Bodoni: "font-bodoni",

@@ -31,8 +31,8 @@ export const Default = Template.bind({});
 Default.args = {
   children: "Button",
   type: "primary",
-  size: "sm",
+  size: "md",
   font: "Default",
-  disabled: true
+  disabled: false
 }
 
