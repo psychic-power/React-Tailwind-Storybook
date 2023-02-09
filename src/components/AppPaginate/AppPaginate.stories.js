@@ -1,8 +1,8 @@
-import AppButton from "./AppButton";
+import AppPaginate from "./AppPaginate";
 
 export default {
-  title: 'Components/UI-Base Elements/AppButton',
-  component: AppButton,
+  title: 'Components/UI-Base Elements/AppPaginate',
+  component: AppPaginate,
   argTypes: {
     type: {
       control: {
@@ -25,7 +25,7 @@ export default {
   }
 }
 
-const Template = args => <AppButton {...args} />;
+const Template = args => <AppPaginate {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

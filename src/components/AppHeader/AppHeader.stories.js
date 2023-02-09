@@ -1,8 +1,8 @@
-import AppButton from "./AppButton";
+import AppHeader from "./AppHeader";
 
 export default {
-  title: 'Components/UI-Base Elements/AppButton',
-  component: AppButton,
+  title: 'Components/UI-Base Elements/AppHeader',
+  component: AppHeader,
   argTypes: {
     type: {
       control: {
@@ -25,14 +25,14 @@ export default {
   }
 }
 
-const Template = args => <AppButton {...args} />;
+const Template = args => <AppHeader {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  children: "Button",
-  type: "primary",
-  size: "sm",
-  font: "Default",
-  disabled: true
+  // children: "Button",
+  // type: "primary",
+  // size: "sm",
+  // font: "Default",
+  // disabled: true
 }
 
