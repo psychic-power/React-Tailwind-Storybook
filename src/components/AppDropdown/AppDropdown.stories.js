@@ -1,7 +1,7 @@
 import AppDropdown from "./AppDropdown";
 
 export default {
-  title: "Components/UI-Base Elements/AppDropdown",
+  title: "Components/Test Elements/AppDropdown",
   component: AppDropdown,
   argTypes: {
     // type: {

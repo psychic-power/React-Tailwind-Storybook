@@ -1,7 +1,7 @@
 import AppHeader from "./AppHeader";
 
 export default {
-  title: "Components/UI-Base Elements/AppHeader",
+  title: "Components/Test Elements/AppHeader",
   component: AppHeader,
   argTypes: {
     // type: {

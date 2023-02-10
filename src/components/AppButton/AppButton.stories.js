@@ -1,7 +1,7 @@
 import AppButton from "./AppButton";
 
 export default {
-  title: 'Components/UI-Base Elements/AppButton',
+  title: 'Components/Test Elements/AppButton',
   component: AppButton,
   argTypes: {
     type: {

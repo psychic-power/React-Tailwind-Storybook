@@ -1,7 +1,7 @@
 import AppGridList from "./AppGridList";
 
 export default {
-  title: 'Components/UI-Base Elements/AppGridList',
+  title: 'Components/Test Elements/AppGridList',
   component: AppGridList,
   argTypes: {
     type: {

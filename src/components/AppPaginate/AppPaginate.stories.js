@@ -1,7 +1,7 @@
 import AppPaginate from "./AppPaginate";
 
 export default {
-  title: 'Components/UI-Base Elements/AppPaginate',
+  title: 'Components/Test Elements/AppPaginate',
   component: AppPaginate,
   argTypes: {
     size: {
