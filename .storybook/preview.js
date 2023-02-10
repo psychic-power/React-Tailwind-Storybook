@@ -1,3 +1,4 @@
+import { DEFAULT_THEME, withTailwindTheme } from './withTailwindTheme.decorator';
 import '../src/index.css';
 
 export const parameters = {
@@ -8,4 +9,49 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+  backgrounds: {
+    default: 'light',
+    values: [
+      {
+        name: 'light',
+        value: '#00aced',
+      },
+      {
+        name: 'dark',
+        value: '#3b5998',
+      },
+    ],
+  },
+};
+
+export const globalTypes = {
+  theme: {
+    name: 'Theme',
+    description: 'Global theme for components',
+    toolbar: {
+      icon: 'paintbrush',
+      // Array of plain string values or MenuItem shape
+      items: [
+        { value: 'light', title: 'Light', left: '🌞'},
+        { value: 'dark', title: 'Dark', left: '🌛'},
+      ],
+      // Change title based on selected value
+      dynamicTitle: true,
+    },
+  },
+  backgrounds: {
+    default: 'light',
+    values: [
+      {
+        name: 'light',
+        value: '#00aced',
+      },
+      {
+        name: 'dark',
+        value: '#3b5998',
+      },
+    ],
+  },
+};
+
+export const decorators = [withTailwindTheme];

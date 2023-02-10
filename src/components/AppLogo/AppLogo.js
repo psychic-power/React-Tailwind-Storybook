@@ -2,10 +2,9 @@ import React from "react";
 
 export default function AppLogo({ textClassName, bgClassName, title }) {
   const classNames =
-    (textClassName ?? "text-primary-600 dark:text-primary-500") +
+    (textClassName ? textClassName : "text-primary-600 dark:text-primary-500") +
     " " +
-    (bgClassName ?? "bg-gray-50 dark:bg-gray-800");
-  console.log("classnames => ", classNames);
+    (bgClassName ? bgClassName : "bg-gray-50 dark:bg-gray-800");
   return (
     <div
       className={`flex flex-row justify-center items-center p-4 w-fit  ${classNames}`}
