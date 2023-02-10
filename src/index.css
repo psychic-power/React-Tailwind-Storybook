@@ -26,3 +26,8 @@
   font-family: 'Verdana';
   src: url('./assets/fonts/Verdana-Font/Verdana.ttf');
 }
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
