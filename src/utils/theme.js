@@ -86,3 +86,10 @@ const darkBgColors = ["dark:bg-white", "dark:bg-black",
 "dark:bg-pink-50", "dark:bg-pink-100", "dark:bg-pink-200", "dark:bg-pink-300", "dark:bg-pink-400", "dark:bg-pink-500", "dark:bg-pink-600", "dark:bg-pink-700", "dark:bg-pink-800", "dark:bg-pink-900",
 "dark:bg-social-facebook", "dark:bg-social-twitter", "dark:bg-social-google", "dark:bg-social-dribble", "dark:bg-social-github",
 ]
+
+const size = [
+  "w-1", "w-2", "w-3", "w-4", "w-5", "w-6", "w-7", "w-8", "w-9", "w-10",
+  "w-11", "w-12", "w-13", "w-14", "w-15", "w-16", "w-17", "w-18", "w-19", "w-20",
+  "h-1", "h-2", "h-3", "h-4", "h-5", "h-6", "h-7", "h-8", "h-9", "h-10",
+  "h-11", "h-12", "h-13", "h-14", "h-15", "h-16", "h-17", "h-18", "h-19", "h-20",
+]
