@@ -11,8 +11,8 @@ export default function AppAvatar({ username, image, size }) {
       {image ? (
         <img src={image} className={`rounded-full w-${size} h-${size} `}/>
       ) : username ? (
-        <div className={`rounded-full flex justify-center items-center text-gray-50 bg-gray-800 w-${size} h-${size}`}>
-          <AppTypography colorClassName="text-gray-50">{nameAvatar}</AppTypography>
+        <div className={`rounded-full flex justify-center p-4 items-center text-gray-50 bg-gray-800 w-${size} h-${size}`}>
+          <AppTypography type={"PSemibold"} colorClassName="text-gray-50">{nameAvatar}</AppTypography>
         </div>
       ) : (
         <div className="rounded-full w-fit p-1 bg-gray-300">
