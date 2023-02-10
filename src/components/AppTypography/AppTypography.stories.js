@@ -26,7 +26,7 @@ Default.args = {
   children: "Felis sit ac pretium viverra in. Ut purus mattis tempor nullam lectus ultrices mi. Non vulputate nisl et quam a.",
   type: "PRegular",
   font: "Inter",
-  colorClassName: "text-black"
+  colorClassName: "text-black dark:text-white"
 };
 
 export const H1Red = Template.bind({});

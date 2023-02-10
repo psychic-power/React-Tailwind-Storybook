@@ -11,6 +11,6 @@ export const Default = Template.bind({});
 Default.args = {
   title: true,
   colorClassName: "text-primary-600",
-  bgClassName: "bg-gray-50",
+  bgClassName: "bg-gray-50 dark:bg-gray-800",
 };
 

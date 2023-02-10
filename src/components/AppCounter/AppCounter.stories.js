@@ -10,7 +10,7 @@ const Template = args => <AppCounter {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   children: "Test",
-  textClassName: "text-gray-900",
-  bgClassName: "bg-gray-50",
+  textClassName: "text-gray-900 dark:text-gray-50",
+  bgClassName: "bg-gray-100 dark:bg-gray-800",
 };
 
