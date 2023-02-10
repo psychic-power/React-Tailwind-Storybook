@@ -12,5 +12,6 @@ Default.args = {
   iconName: "PlusIcon",
   iconClassName: "",
   bgClassName: "",
+  size: 4
 };
 
