@@ -1,15 +1,11 @@
 import React from "react";
 
-export default function AppLogo({ textClassName, bgClassName, title }) {
-  const classNames =
-    (textClassName ? textClassName : "text-primary-600 dark:text-primary-500") +
-    " " +
-    (bgClassName ? bgClassName : "bg-gray-50 dark:bg-gray-800");
+export default function Logo({ abbr }) {
   return (
     <div
-      className={`flex flex-row justify-center items-center p-4 w-fit  ${classNames}`}
+      className={`flex flex-row justify-center items-center w-fit text-primary-600 dark:text-primary-500`}
     >
-      {title && (
+      {abbr && (
         <div className={`mr-4`}>
           <svg
             width="20"
