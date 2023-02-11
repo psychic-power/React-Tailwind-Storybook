@@ -37,6 +37,7 @@ export const TextColor = {
   tetriary: "text-content-tetriary-light dark:text-content-tetriary-dark",
   select: "text-action-select-light dark:text-action-select-dark",
   hover: "text-action-hover-light dark:text-action-hover-dark",
+  primaryDark:"text-content-primary-dark",
 }
 
 export const BgColor = {
@@ -45,6 +46,7 @@ export const BgColor = {
   tetriary: "bg-content-tetriary-light dark:bg-content-tetriary-dark",
   select: "bg-action-select-light dark:bg-action-select-dark",
   hover: "bg-action-hover-light dark:bg-action-hover-dark",
+  altDark: "bg-surface-alt-dark",
 }
 
 
