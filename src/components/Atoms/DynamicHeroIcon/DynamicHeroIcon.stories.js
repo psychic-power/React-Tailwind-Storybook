@@ -17,35 +17,35 @@ const Template = args => <DynamicHeroIcon {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  iconName: "PlusIcon",
+  name: "PlusIcon",
   size: 10,
   color: "primary"
 };
 
 export const UpIcon = Template.bind({});
 UpIcon.args = {
-  iconName: "ChevronUpIcon",
+  name: "ChevronUpIcon",
   size: 10,
   color: "primary"
 };
 
 export const DownIcon = Template.bind({});
 DownIcon.args = {
-  iconName: "ChevronDownIcon",
+  name: "ChevronDownIcon",
   size: 10,
   color: "primary"
 };
 
 export const LeftIcon = Template.bind({});
 LeftIcon.args = {
-  iconName: "ChevronLeftIcon",
+  name: "ChevronLeftIcon",
   size: 10,
   color: "primary"
 };
 
 export const RightIcon = Template.bind({});
 RightIcon.args = {
-  iconName: "ChevronRightIcon",
+  name: "ChevronRightIcon",
   size: 10,
   color: "primary"
 };
