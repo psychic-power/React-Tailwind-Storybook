@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { BgColor, TextColor } from "../../../utils/theme";
 import Typography from "../Typography/Typography";
 
-export default function Avatar({ username, image, size }) {
+export default function Avatar({ username, image, size, ...rest }) {
   const [nameAvatar, setNameAvatar] = useState("");
   useEffect(() => {
     setNameAvatar(username?.split(" ")?.map((item) => item[0]));
@@ -17,6 +17,7 @@ export default function Avatar({ username, image, size }) {
       {image ? (
         <div
           className={`ring-gray-200 ring-1 rounded-full w-fit w-${size} h-${size}`}
+          {...rest}
         >
           <img
             src={image}
@@ -27,13 +28,17 @@ export default function Avatar({ username, image, size }) {
       ) : username ? (
         <div
           className={`flex justify-center items-center rounded-full ring-gray-200 ring-1 w-${size} h-${size} ${BgColor["altDark"]}`}
+          {...rest}
         >
           <Typography type={"pMedium"} color={"primaryDark"}>
             {nameAvatar}
           </Typography>
         </div>
       ) : (
-        <div className="rounded-full w-fit bg-surface-alt-light ring-gray-200 dark:ring-gray-50 ring-1">
+        <div
+          className="rounded-full w-fit bg-surface-alt-light ring-gray-200 dark:ring-gray-50 ring-1"
+          {...rest}
+        >
           <UserIcon
             className={`w-${size} h-${size} p-1 text-content-tetriary-light`}
           />

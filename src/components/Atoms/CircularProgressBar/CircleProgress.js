@@ -2,16 +2,16 @@ import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
-export default function CircleProgress({ percentage }) {
+export default function CircleProgress({ percentage, ...rest }) {
   if (percentage >= 100) {
     return (
-      <div className="text-success-light dark:text-success-dark">
+      <div className="text-success-light dark:text-success-dark" {...rest}>
         <CheckCircleIcon className="w-4 h-4" />
       </div>
     );
   } else {
     return (
-      <div className="w-3.5 h-3.5">
+      <div className="w-3.5 h-3.5" {...rest}>
         <CircularProgressbar
           value={percentage}
           strokeWidth={16}

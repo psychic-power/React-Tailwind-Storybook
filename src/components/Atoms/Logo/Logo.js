@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function Logo({ abbr }) {
+export default function Logo({ abbr, ...rest }) {
   return (
     <div
       className={`flex flex-row justify-center items-center w-fit text-primary-600 dark:text-primary-500`}
+      {...rest}
     >
       {abbr && (
         <div className={`mr-4`}>

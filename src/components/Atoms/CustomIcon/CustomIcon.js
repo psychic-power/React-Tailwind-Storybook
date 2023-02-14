@@ -1,9 +1,9 @@
-export default function CustomIcon({ icon, size }) {
+export default function CustomIcon({ icon, size, ...rest }) {
   const avatarSize = size ? size : "24";
   switch (icon) {
     case "highest":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -25,7 +25,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "high":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -43,7 +43,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "medium":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -61,7 +61,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "low":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -79,7 +79,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "lowest":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -111,7 +111,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "story":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -135,7 +135,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "bug":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -159,7 +159,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "task":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -189,7 +189,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "initiative":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -231,7 +231,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "custom":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -255,7 +255,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "epic":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -279,7 +279,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "subtask":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -306,7 +306,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "git-pull-request":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -327,7 +327,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "git-pull-request-closed":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -348,7 +348,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "git-pull-request-draft":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -374,7 +374,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "git-merge":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -395,7 +395,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "repo-forked":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -416,7 +416,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "git-merge-queue":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -454,7 +454,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "git-compare":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -475,7 +475,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "git-commit":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -496,7 +496,7 @@ export default function CustomIcon({ icon, size }) {
 
     case "git-branch":
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}
@@ -517,7 +517,7 @@ export default function CustomIcon({ icon, size }) {
 
     default:
       return (
-        <div>
+        <div {...rest}>
           <svg
             width={avatarSize}
             height={avatarSize}

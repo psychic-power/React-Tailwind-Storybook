@@ -1,7 +1,7 @@
 import React from "react";
 import { TextColor } from "../../../utils/theme";
 
-export default function Typography({ type, children, color }) {
+export default function Typography({ type, children, color, ...rest }) {
   switch (type) {
     case "h1":
       return (
@@ -9,6 +9,7 @@ export default function Typography({ type, children, color }) {
           className={`text-h1 font-semibold ${
             TextColor[color ? color : "primary"]
           }`}
+          {...rest}
         >
           {children}
         </h1>
@@ -19,6 +20,7 @@ export default function Typography({ type, children, color }) {
           className={`text-h2 font-semibold ${
             TextColor[color ? color : "primary"]
           }`}
+          {...rest}
         >
           {children}
         </h2>
@@ -29,6 +31,7 @@ export default function Typography({ type, children, color }) {
           className={`text-h3 font-semibold ${
             TextColor[color ? color : "primary"]
           }`}
+          {...rest}
         >
           {children}
         </h3>
@@ -39,6 +42,7 @@ export default function Typography({ type, children, color }) {
           className={`text-p font-semibold ${
             TextColor[color ? color : "primary"]
           }`}
+          {...rest}
         >
           {children}
         </p>
@@ -46,7 +50,10 @@ export default function Typography({ type, children, color }) {
     case "p-medium":
       return (
         <p
-          className={`text-p font-medium ${TextColor[color ? color : "primary"]}`}
+          className={`text-p font-medium ${
+            TextColor[color ? color : "primary"]
+          }`}
+          {...rest}
         >
           {children}
         </p>
@@ -54,7 +61,10 @@ export default function Typography({ type, children, color }) {
     case "p-regular":
       return (
         <p
-          className={`text-p font-normal ${TextColor[color ? color : "primary"]}`}
+          className={`text-p font-normal ${
+            TextColor[color ? color : "primary"]
+          }`}
+          {...rest}
         >
           {children}
         </p>
@@ -65,6 +75,7 @@ export default function Typography({ type, children, color }) {
           className={`text-caption font-normal ${
             TextColor[color ? color : "primary"]
           }`}
+          {...rest}
         >
           {children}
         </p>
@@ -75,6 +86,7 @@ export default function Typography({ type, children, color }) {
           className={`text-caption2 font-normal ${
             TextColor[color ? color : "primary"]
           }`}
+          {...rest}
         >
           {children}
         </p>
@@ -82,7 +94,10 @@ export default function Typography({ type, children, color }) {
     default:
       return (
         <p
-          className={`text-p font-normal ${TextColor[color ? color : "primary"]}`}
+          className={`text-p font-normal ${
+            TextColor[color ? color : "primary"]
+          }`}
+          {...rest}
         >
           {children}
         </p>
