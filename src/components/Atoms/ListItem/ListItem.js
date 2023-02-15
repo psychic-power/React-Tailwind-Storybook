@@ -1,6 +1,15 @@
 import CircleProgress from "../CircularProgressBar/CircleProgress";
 import CustomIcon from "../CustomIcon/CustomIcon";
-import Typography, { Caption, PMedium } from "../Typography/Typography";
+import { Caption, PMedium } from "../Typography/Typography";
+
+/**
+ * This component represents List items.
+ *
+ * @param {string} itemname - Title of item
+ * @param {string} iconname - Iconname of left side of itemname
+ * @param {number} percent - The percent of progress
+ * @param rest - The rest of other props. It can include custom style, key, id, alt etc
+ */
 
 export default function ListItem({ itemname, iconname, percent, ...rest }) {
   return (

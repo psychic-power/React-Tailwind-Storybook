@@ -2,7 +2,6 @@ import IconButton from "../../Atoms/IconButton/IconButton";
 import Typography, { H3 } from "../../Atoms/Typography/Typography";
 import Sidebar from "../../Compounds/SidebarMenu/Sidebar";
 
-
 export default function ActiveBoard({ ...rest }) {
   return (
     <div className="flex h-full bg-surface-alt-light dark:bg-surface-alt-dark">

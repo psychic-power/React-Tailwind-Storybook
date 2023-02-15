@@ -1,5 +1,12 @@
 import React from "react";
 
+/**
+ * This component represents company logo.
+ *
+ * @param {boolean} abbr - The large abbreviation of company logo - H. If true, show H.
+ * @param rest - The rest of other props. It can include custom style, key, id, alt etc
+ */
+
 export default function Logo({ abbr, ...rest }) {
   return (
     <div

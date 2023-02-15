@@ -1,3 +1,10 @@
+/**
+ * This component represents dividers.
+ *
+ * @param {boolean} vertical - It represents direction of divider. If vertical is true, it's just vertical divider.
+ * @param rest - The rest of other props. It can include custom style, key, id, alt etc
+ */
+
 export default function Divider({ vertical, ...rest }) {
   return (
     <div

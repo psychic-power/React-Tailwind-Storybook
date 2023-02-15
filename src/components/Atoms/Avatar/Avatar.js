@@ -3,6 +3,15 @@ import { useEffect, useState } from "react";
 import { BgColor, TextColor } from "../../../utils/theme";
 import { PMedium } from "../Typography/Typography";
 
+/**
+ * This component represents a user avatars.
+ *
+ * @param {string} username - If the image not exist, show avatar with name (e.g John Doe - JD)
+ * @param {string} image - The image source (e.g https://images/abc.png).
+ * @param {number} size - The variant of the avatar (it increases with 4x pixel of value).
+ * @param rest - The rest of other props. It can include custom style, key, id, alt etc
+ */
+
 export default function Avatar({ username, image, size, ...rest }) {
   const [nameAvatar, setNameAvatar] = useState("");
   useEffect(() => {

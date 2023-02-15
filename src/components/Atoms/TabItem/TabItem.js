@@ -1,6 +1,15 @@
 import React from "react";
 import { PMedium } from "../Typography/Typography";
 
+/**
+ * This component represents individual tab.
+ *
+ * @param {string} name - Title of tabitem
+ * @param {boolean} current - Current status of tab
+ * @param {function} onItemClicked - Handle Tabitem on click event
+ * @param rest - The rest of other props. It can include custom style, key, id, alt etc
+ */
+
 export default function TabItem({
   name,
   current = false,

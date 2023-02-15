@@ -1,6 +1,15 @@
 import React from "react";
 import { TextColor } from "../../../utils/theme";
 
+/**
+ * This component represents typography.
+ *
+ * @param {string} children - The content of text
+ * @param {string} color - Text color. Default is primary.
+ * @param rest - The rest of other props. It can include custom style, key, id, alt etc
+ * There are 8 types H1, H2, H3, PSemobold, P-Medium, P-Regular, Caption, Caption2 
+*/
+
 export const H1 = ({ children, color, ...rest }) => {
   return (
     <h1

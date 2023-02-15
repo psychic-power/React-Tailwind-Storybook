@@ -3,6 +3,18 @@ import DynamicHeroIcon from "../DynamicHeroIcon/DynamicHeroIcon";
 import Typography, { PMedium } from "../Typography/Typography";
 import Counter from "../Counter/Counter";
 
+/**
+ * This component represents Menu Item.
+ *
+ * @param {string} iconName - Icon name of MenuItem
+ * @param {string} content - Title of MenuItem
+ * @param {number} count - Counter of MenuItem - right side
+ * @param {number} width - width class - default is w-full.
+ * @param {string} color - The background color of menuitem
+ * @param {boolean} show - If this prop is true, shows MenuItem. 
+ * @param rest - The rest of other props. It can include custom style, key, id, alt etc
+ */
+
 export default function MenuItem({
   iconName,
   content,

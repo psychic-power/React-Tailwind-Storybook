@@ -4,6 +4,11 @@ import MenuItem from "../../Atoms/MenuItem/MenuItem";
 import IconButton from "../../Atoms/IconButton/IconButton";
 import ToggleDropdown from "../../Atoms/ToggleDropdown/ToggleDropdown";
 
+/**
+ * This component represents Sidebar menu (compound component).
+ * It's just one of complete component
+ */
+
 export default function Sidebar() {
   return (
     <div

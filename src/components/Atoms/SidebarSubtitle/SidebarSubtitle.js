@@ -2,6 +2,19 @@ import React from "react";
 import DynamicHeroIcon from "../DynamicHeroIcon/DynamicHeroIcon";
 import { PMedium } from "../Typography/Typography";
 
+/**
+ * This component represents Sidebar sub title.
+ * 
+ * TODO - handle clicking setting icon button
+ * @param {string} iconName - Icon name of MenuItem
+ * @param {string} content - Title of MenuItem
+ * @param {number} width - width class - default is w-full.
+ * @param {boolean} rightIcon - Show setting Icon
+ * @param {string} color - The background color of menuitem
+ * @param {function} onItemClicked - Handling onClick event of subtitle button. 
+ * @param rest - The rest of other props. It can include custom style, key, id, alt etc
+ */
+
 export default function SidebarSubtitle({
   iconName,
   content,
