@@ -8,6 +8,7 @@ export default function MenuItem({
   content,
   count,
   width,
+  color,
   show,
   ...rest
 }) {
@@ -17,7 +18,11 @@ export default function MenuItem({
         <button
           className={`flex justify-between items-center p-2 rounded ${
             width ?? "w-full"
-          } bg-surface-base-light hover:bg-action-hover-light focus:bg-action-select-light dark:bg-surface-base-dark dark:hover:bg-action-hover-dark dark:focus:bg-action-select-dark`}
+          } bg-surface-${
+            color ?? "base"
+          }-light hover:bg-action-hover-light focus:bg-action-select-light dark:bg-surface-${
+            color ?? "base"
+          }-dark dark:hover:bg-action-hover-dark dark:focus:bg-action-select-dark`}
           {...rest}
         >
           <div className="flex">

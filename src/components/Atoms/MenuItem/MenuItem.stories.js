@@ -22,6 +22,7 @@ ItemWithCount.args = {
   content: "Label",
   iconName: "InboxIcon",
   width: "w-40",
+  color: "base",
   show: true
 };
 

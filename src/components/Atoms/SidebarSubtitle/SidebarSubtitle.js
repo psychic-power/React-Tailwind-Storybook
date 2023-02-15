@@ -7,13 +7,20 @@ export default function SidebarSubtitle({
   content,
   width,
   rightIcon,
+  color,
   onItemClicked = () => console.error("You passed no action to the component"),
   ...rest
 }) {
   return (
     <button
       onClick={onItemClicked}
-      className={`flex justify-between items-center p-2 rounded ${width??"w-full"} bg-surface-base-light hover:bg-action-hover-light dark:bg-surface-base-dark dark:hover:bg-action-hover-dark`}
+      className={`flex justify-between items-center p-2 rounded ${
+        width ?? "w-full"
+      } bg-surface-${
+        color ?? "base"
+      }-light hover:bg-action-hover-light dark:bg-surface-${
+        color ?? "base"
+      }-dark dark:hover:bg-action-hover-dark`}
       {...rest}
     >
       <div className="flex">

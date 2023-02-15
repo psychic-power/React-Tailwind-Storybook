@@ -20,7 +20,8 @@ ItemWithSetting.args = {
   rightIcon:true,
   content: "Label",
   iconName: "ChevronDownIcon",
-  width: "w-40"
+  width: "w-40",
+  color: "base",
 };
 
 
