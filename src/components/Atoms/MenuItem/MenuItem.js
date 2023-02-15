@@ -1,6 +1,6 @@
 import React from "react";
 import DynamicHeroIcon from "../DynamicHeroIcon/DynamicHeroIcon";
-import Typography from "../Typography/Typography";
+import Typography, { PMedium } from "../Typography/Typography";
 import Counter from "../Counter/Counter";
 
 export default function MenuItem({
@@ -31,9 +31,9 @@ export default function MenuItem({
                 <DynamicHeroIcon size={4} name={iconName} color={"secondary"} />
               </div>
             )}
-            <Typography type={"pMedium"} color={"primary"}>
+            <PMedium color={"primary"}>
               {content}
-            </Typography>
+            </PMedium>
           </div>
           {(count || count !== 0) && (
             <div>

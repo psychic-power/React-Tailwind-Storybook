@@ -12,9 +12,9 @@ Default.args = {
   title: "Product Development",
   items: [
     {icon: "ViewColumnsIcon", content:"Active board", count:0},
-    {icon: "ArrowsRightLeft", content:"Triage", count:1},
+    {icon: "ArrowsRightLeftIcon", content:"Triage", count:1},
     {icon: "ClockIcon", content:"Retrospective", count:0},
-    {icon: "HandRaised", content:"Agreements", count:0},
+    {icon: "HandRaisedIcon", content:"Agreements", count:0},
   ],
   width: "w-60" 
 };

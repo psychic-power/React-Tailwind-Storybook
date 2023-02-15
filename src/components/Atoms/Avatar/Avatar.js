@@ -1,7 +1,7 @@
 import { UserIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
 import { BgColor, TextColor } from "../../../utils/theme";
-import Typography from "../Typography/Typography";
+import { PMedium } from "../Typography/Typography";
 
 export default function Avatar({ username, image, size, ...rest }) {
   const [nameAvatar, setNameAvatar] = useState("");
@@ -30,9 +30,9 @@ export default function Avatar({ username, image, size, ...rest }) {
           className={`flex justify-center items-center rounded-full ring-gray-200 ring-1 w-${size} h-${size} ${BgColor["altDark"]}`}
           {...rest}
         >
-          <Typography type={"pMedium"} color={"primaryDark"}>
+          <PMedium color={"primaryDark"}>
             {nameAvatar}
-          </Typography>
+          </PMedium>
         </div>
       ) : (
         <div

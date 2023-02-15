@@ -1,24 +1,18 @@
-import Typography from "./Typography";
+import {
+  Caption,
+  Caption2,
+  H1,
+  H2,
+  H3,
+  PMedium,
+  PRegular,
+  PSemibold,
+} from "./Typography";
 
 export default {
   title: "Components/Atoms/Typography",
-  component: Typography,
+  component: {Caption, Caption2, H1, H2, H3, PMedium, PRegular, PSemibold},
   argTypes: {
-    type: {
-      control: {
-        type: "select",
-      },
-      options: [
-        "h1",
-        "h2",
-        "h3",
-        "p-semibold",
-        "p-medium",
-        "p-regular",
-        "caption",
-        "caption2",
-      ],
-    },
     color: {
       control: {
         type: "select",
@@ -28,78 +22,74 @@ export default {
   },
 };
 
-const Template = (args) => <Typography {...args} />;
+const Heading1 = (args) => <H1 {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
+export const TypoH1 = Heading1.bind({});
+TypoH1.args = {
   children:
     "Felis sit ac pretium viverra in. Ut purus mattis tempor nullam lectus ultrices mi. Non vulputate nisl et quam a.",
-  type: "p-regular",
   color: "primary",
 };
 
-export const h1 = Template.bind({});
-h1.args = {
+const Heading2 = (args) => <H2 {...args} />;
+
+export const TypoH2 = Heading2.bind({});
+TypoH2.args = {
   children:
     "Felis sit ac pretium viverra in. Ut purus mattis tempor nullam lectus ultrices mi. Non vulputate nisl et quam a.",
-  type: "h1",
   color: "primary",
 };
 
-export const h2 = Template.bind({});
-h2.args = {
+const Heading3 = (args) => <H3 {...args} />;
+
+export const TypoH3 = Heading3.bind({});
+TypoH3.args = {
   children:
     "Felis sit ac pretium viverra in. Ut purus mattis tempor nullam lectus ultrices mi. Non vulputate nisl et quam a.",
-  type: "h2",
   color: "primary",
 };
 
-export const h3 = Template.bind({});
-h3.args = {
+const Semibold = (args) => <PSemibold {...args} />;
+
+export const SemiboldP = Semibold.bind({});
+SemiboldP.args = {
   children:
     "Felis sit ac pretium viverra in. Ut purus mattis tempor nullam lectus ultrices mi. Non vulputate nisl et quam a.",
-  type: "h3",
   color: "primary",
 };
 
-export const pSemibold = Template.bind({});
-pSemibold.args = {
+const Medium = (args) => <PMedium {...args} />;
+
+export const MediumP = Medium.bind({});
+MediumP.args = {
   children:
     "Felis sit ac pretium viverra in. Ut purus mattis tempor nullam lectus ultrices mi. Non vulputate nisl et quam a.",
-  type: "p-semibold",
   color: "primary",
 };
 
-export const pMedium = Template.bind({});
-pMedium.args = {
+const Regular = (args) => <PRegular {...args} />;
+
+export const RegularP = Regular.bind({});
+RegularP.args = {
   children:
     "Felis sit ac pretium viverra in. Ut purus mattis tempor nullam lectus ultrices mi. Non vulputate nisl et quam a.",
-  type: "p-medium",
   color: "primary",
 };
 
-export const pRegular = Template.bind({});
-pRegular.args = {
+const PCaption = (args) => <Caption {...args} />;
+
+export const TypoCaption = PCaption.bind({});
+TypoCaption.args = {
   children:
     "Felis sit ac pretium viverra in. Ut purus mattis tempor nullam lectus ultrices mi. Non vulputate nisl et quam a.",
-  type: "p-regular",
   color: "primary",
 };
 
-export const caption = Template.bind({});
-caption.args = {
+const PCaption2 = (args) => <Caption2 {...args} />;
+
+export const TypoCaption2 = PCaption2.bind({});
+TypoCaption2.args = {
   children:
     "Felis sit ac pretium viverra in. Ut purus mattis tempor nullam lectus ultrices mi. Non vulputate nisl et quam a.",
-  type: "caption",
   color: "primary",
 };
-
-export const caption2 = Template.bind({});
-caption2.args = {
-  children:
-    "Felis sit ac pretium viverra in. Ut purus mattis tempor nullam lectus ultrices mi. Non vulputate nisl et quam a.",
-  type: "caption2",
-  color: "primary",
-};
-
-

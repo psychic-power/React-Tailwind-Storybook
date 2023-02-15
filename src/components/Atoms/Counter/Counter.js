@@ -1,6 +1,6 @@
 import React from "react";
 import { BgColor } from "../../../utils/theme";
-import Typography from "../Typography/Typography";
+import { Caption } from "../Typography/Typography";
 
 export default function Counter({ children, textColor, bgColor, ...rest }) {
   return (
@@ -8,9 +8,9 @@ export default function Counter({ children, textColor, bgColor, ...rest }) {
       className={`flex justify-center items-center px-1 rounded w-fit ${BgColor[bgColor]}`}
       {...rest}
     >
-      <Typography type={"caption"} color={textColor}>
+      <Caption color={textColor}>
         {children}
-      </Typography>
+      </Caption>
     </div>
   );
 }

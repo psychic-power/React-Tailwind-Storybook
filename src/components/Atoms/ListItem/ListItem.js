@@ -1,6 +1,6 @@
 import CircleProgress from "../CircularProgressBar/CircleProgress";
 import CustomIcon from "../CustomIcon/CustomIcon";
-import Typography from "../Typography/Typography";
+import Typography, { Caption, PMedium } from "../Typography/Typography";
 
 export default function ListItem({ itemname, iconname, percent, ...rest }) {
   return (
@@ -10,10 +10,10 @@ export default function ListItem({ itemname, iconname, percent, ...rest }) {
     >
       <div className="flex space-x-2 items-center">
         <CustomIcon icon={iconname} size="14" />
-        <Typography type="pMedium">{itemname}</Typography>
+        <PMedium>{itemname}</PMedium>
       </div>
       <div className="flex space-x-1 items-center">
-        <Typography type="caption">{percent}%</Typography>
+        <Caption>{percent}%</Caption>
         <CircleProgress percentage={percent} />
       </div>
     </div>

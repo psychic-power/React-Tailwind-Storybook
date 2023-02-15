@@ -1,6 +1,6 @@
 import React from "react";
 import DynamicHeroIcon from "../DynamicHeroIcon/DynamicHeroIcon";
-import Typography from "../Typography/Typography";
+import { PMedium } from "../Typography/Typography";
 
 export default function SidebarSubtitle({
   iconName,
@@ -29,9 +29,9 @@ export default function SidebarSubtitle({
             <DynamicHeroIcon size={4} name={iconName} color={"secondary"} />
           </div>
         )}
-        <Typography type={"pMedium"} color={"primary"}>
+        <PMedium color={"primary"}>
           {content}
-        </Typography>
+        </PMedium>
       </div>
       {rightIcon && (
         <DynamicHeroIcon size={4} name={"Cog8ToothIcon"} color={"secondary"} />
