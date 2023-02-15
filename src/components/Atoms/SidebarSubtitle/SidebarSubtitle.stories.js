@@ -11,7 +11,8 @@ export const Default = Template.bind({});
 Default.args = {
   rightIcon:false,
   content: "Label",
-  iconName: "UserIcon",
+  iconName: "ChevronDownIcon",
+  width: "w-40"
 };
 
 export const ItemWithSetting = Template.bind({});
@@ -19,6 +20,7 @@ ItemWithSetting.args = {
   rightIcon:true,
   content: "Label",
   iconName: "ChevronDownIcon",
+  width: "w-40"
 };
 
 

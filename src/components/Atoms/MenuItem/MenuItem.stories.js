@@ -12,6 +12,8 @@ Default.args = {
   // count:"1",
   content: "Label",
   iconName: "UserIcon",
+  width: "w-40",
+  show: true
 };
 
 export const ItemWithCount = Template.bind({});
@@ -19,6 +21,8 @@ ItemWithCount.args = {
   count:"1",
   content: "Label",
   iconName: "InboxIcon",
+  width: "w-40",
+  show: true
 };
 
 

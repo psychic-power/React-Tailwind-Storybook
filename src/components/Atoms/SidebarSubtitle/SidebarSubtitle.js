@@ -5,12 +5,15 @@ import Typography from "../Typography/Typography";
 export default function SidebarSubtitle({
   iconName,
   content,
+  width,
   rightIcon,
+  onItemClicked = () => console.error("You passed no action to the component"),
   ...rest
 }) {
   return (
     <button
-      className={`flex justify-between items-center p-2 rounded w-40 bg-surface-base-light hover:bg-action-hover-light dark:bg-surface-base-dark dark:hover:bg-action-hover-dark`}
+      onClick={onItemClicked}
+      className={`flex justify-between items-center p-2 rounded ${width??"w-full"} bg-surface-base-light hover:bg-action-hover-light dark:bg-surface-base-dark dark:hover:bg-action-hover-dark`}
       {...rest}
     >
       <div className="flex">
