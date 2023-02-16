@@ -1,5 +1,14 @@
 import React from "react";
-import Typography from "../Typography/Typography";
+import { PMedium } from "../Typography/Typography";
+
+/**
+ * This component represents individual tab.
+ *
+ * @param {string} name - Title of tabitem
+ * @param {boolean} current - Current status of tab
+ * @param {function} onItemClicked - Handle Tabitem on click event
+ * @param rest - The rest of other props. It can include custom style, key, id, alt etc
+ */
 
 export default function TabItem({
   name,
@@ -14,9 +23,9 @@ export default function TabItem({
         className={`flex justify-center items-center cursor-pointer p-2 rounded w-fit bg-surface-overlay-light dark:bg-surface-overlay-dark shadow-sm `}
         {...rest}
       >
-        <Typography type={"pMedium"} color={"primary"}>
+        <PMedium color={"primary"}>
           {name}
-        </Typography>
+        </PMedium>
       </li>
     );
   } else {
@@ -26,9 +35,9 @@ export default function TabItem({
         className={`flex justify-center items-center cursor-pointer p-2 rounded w-fit bg-surface-base-light hover:bg-action-hover-light focus:bg-action-select-light dark:bg-surface-base-dark dark:hover:bg-action-hover-dark dark:focus:bg-action-select-dark focus:ring-gray-800 dark:focus:ring-gray-100 focus:ring-2 opacity-50`}
         {...rest}
       >
-        <Typography type={"pMedium"} color={"primary"}>
+        <PMedium color={"primary"}>
           {name}
-        </Typography>
+        </PMedium>
       </li>
     );
   }

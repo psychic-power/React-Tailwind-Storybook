@@ -1,3 +1,12 @@
+/**
+ * This component represents custom icons.
+ *
+ * Icons get from svg file
+ * @param {string} icon - Iconname
+ * @param {number} size - Icon size and unit is pixel. e.g 24 represents 24pixel.
+ * @param rest - The rest of other props. It can include custom style, key, id, alt etc
+ */
+
 export default function CustomIcon({ icon, size, ...rest }) {
   const avatarSize = size ? size : "24";
   switch (icon) {

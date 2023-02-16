@@ -1,13 +1,13 @@
-import Sidebar from "./Sidebar";
+// import Sidebar from "./Sidebar";
 
-export default {
-  title: "Components/Compounds/Sidebar",
-  component: Sidebar,
-};
+// export default {
+//   title: "Components/Compounds/Sidebar",
+//   component: Sidebar,
+// };
 
-const Template = (args) => <Sidebar {...args} />;
+// const Template = (args) => <Sidebar {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
+// export const Default = Template.bind({});
+// Default.args = {
   
-};
+// };

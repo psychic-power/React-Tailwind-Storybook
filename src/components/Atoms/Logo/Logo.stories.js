@@ -9,6 +9,6 @@ const Template = args => <Logo {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  abbr: true,
+  abbreviation: true,
 };
 

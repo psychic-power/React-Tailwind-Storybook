@@ -2,6 +2,17 @@ import { useState } from "react";
 import MenuItem from "../MenuItem/MenuItem";
 import SidebarSubtitle from "../SidebarSubtitle/SidebarSubtitle";
 
+/**
+ * This component represents toggling dropdown.
+ *
+ * @param {string} title - Title of dropdown
+ * @param {string} rightIcon - Icon of toggle title located on the right side
+ * @param {string} width - Width class based on Tailwind CSS
+ * @param {string} color - Background color of dropdown button and item menus.
+ * @param {array[object]} items - Toggle item menu data. e.g  items: [{icon: "ViewColumnsIcon", content:"Active board", count:0}, {icon: "ArrowsRightLeftIcon", content:"Triage", count:1}, {icon: "ClockIcon", content:"Retrospective", count:0}, {icon: "HandRaisedIcon", content:"Agreements", count:0}],
+ * @param rest - The rest of other props. It can include custom style, key, id, alt etc
+ */
+
 export default function ToggleDropdown({
   title,
   rightIcon,

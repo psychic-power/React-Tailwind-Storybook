@@ -1,6 +1,15 @@
 import React from "react";
 import DynamicHeroIcon from "../DynamicHeroIcon/DynamicHeroIcon";
 
+/**
+ * This component represents button with icon.
+ *
+ * @param {string} iconName - Icon name
+ * @param {number} size - Icon size and it's size is 4x of number
+ * @param {string} color - The variant background color of icon button. Default is surface-base
+ * @param rest - The rest of other props. It can include custom style, key, id, alt etc
+ */
+
 export default function IconButton({ iconName, size, color, ...rest }) {
   return (
     <button

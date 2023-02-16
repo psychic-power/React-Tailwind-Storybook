@@ -1,7 +1,16 @@
 import { UserIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
 import { BgColor, TextColor } from "../../../utils/theme";
-import Typography from "../Typography/Typography";
+import { PMedium } from "../Typography/Typography";
+
+/**
+ * This component represents a user avatars.
+ *
+ * @param {string} username - If the image not exist, show avatar with name (e.g John Doe - JD)
+ * @param {string} image - The image source (e.g https://images/abc.png).
+ * @param {number} size - The variant of the avatar (it increases with 4x pixel of value).
+ * @param rest - The rest of other props. It can include custom style, key, id, alt etc
+ */
 
 export default function Avatar({ username, image, size, ...rest }) {
   const [nameAvatar, setNameAvatar] = useState("");
@@ -30,9 +39,9 @@ export default function Avatar({ username, image, size, ...rest }) {
           className={`flex justify-center items-center rounded-full ring-gray-200 ring-1 w-${size} h-${size} ${BgColor["altDark"]}`}
           {...rest}
         >
-          <Typography type={"pMedium"} color={"primaryDark"}>
+          <PMedium color={"primaryDark"}>
             {nameAvatar}
-          </Typography>
+          </PMedium>
         </div>
       ) : (
         <div

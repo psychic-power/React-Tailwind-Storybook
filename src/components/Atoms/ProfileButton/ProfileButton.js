@@ -1,6 +1,15 @@
 import React from "react";
 import Avatar from "../Avatar/Avatar";
 
+/**
+ * This component represents button with avatar.
+ *
+ * @param {string} image - Image url of avatar. If url is empty it'll show avatar baseon username or undefined avatar.
+ * @param {string} username - Username for name avatar
+ * @param {number} size - Avatar size based on tailwind css. e.g 4 means 16pixel.
+ * @param rest - The rest of other props. It can include custom style, key, id, alt etc
+ */
+
 export default function ProfileButton({ image, username, size, ...rest }) {
   return (
     <button
