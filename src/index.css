@@ -23,11 +23,11 @@ p {
   @apply font-inter font-normal text-p;
 }
 
-p .semibold {
+p.semibold {
   @apply font-inter font-semibold text-p;
 }
 
-p .medium {
+p.medium {
   @apply font-inter font-medium text-p;
 }
 
@@ -35,7 +35,7 @@ caption {
   @apply font-inter font-semibold text-caption;
 }
 
-caption .second {
+caption.second {
   @apply font-inter font-semibold text-caption2;
 }
 
@@ -43,7 +43,17 @@ svg path {
   fill: currentColor;
 }
 
+.small svg {
+  width: 8px;
+  height: 8px;
+}
+
 .normal svg {
   width: 16px;
   height: 16px;
+}
+
+.large svg {
+  width: 24px;
+  height: 24px;
 }

@@ -255,254 +255,346 @@ import { ReactComponent as JiraSubtask } from "./icon-svg/Jira-Subtask.svg";
 import { ReactComponent as JiraTask } from "./icon-svg/Jira-Task.svg";
 import { ReactComponent as GitRepoForked } from "./icon-svg/repo-forked.svg";
 
-export const AcademicCapIcon = () => <AcademicCap />;
-export const AdjustmentsIcon = () => <Adjustments />;
-export const AnnotationIcon = () => <Annotation />;
-export const ArchiveIcon = () => <Archive />;
-export const ArrowCircleDownIcon = () => <ArrowCircleDown />;
-export const ArrowCircleLeftIcon = () => <ArrowCircleLeft />;
-export const ArrowCircleRightIcon = () => <ArrowCircleRight />;
-export const ArrowCircleUpIcon = () => <ArrowCircleUp />;
-export const ArrowDownIcon = () => <ArrowDown />;
-export const ArrowLeftIcon = () => <ArrowLeft />;
-export const ArrowNarrowDownIcon = () => <ArrowNarrowDown />;
-export const ArrowNarrowLeftIcon = () => <ArrowNarrowLeft />;
-export const ArrowNarrowRightIcon = () => <ArrowNarrowRight />;
-export const ArrowNarrowUpIcon = () => <ArrowNarrowUp />;
-export const ArrowRightIcon = () => <ArrowRight />;
-export const ArrowsExpandIcon = () => <ArrowsExpand />;
-export const ArrowUpIcon = () => <ArrowUp />;
-export const ArrowUpTrayIcon = () => <ArrowUpTray />;
-export const AtSymbolIcon = () => <AtSymbol />;
-export const BackspaceIcon = () => <Backspace />;
-export const BadgeCheckIcon = () => <BadgeCheck />;
-export const BanIcon = () => <Ban />;
-export const BeakerIcon = () => <Beaker />;
-export const BellIcon = () => <Bell />;
-export const BookmarkIcon = () => <Bookmark />;
-export const BookmarkAltIcon = () => <BookmarkAlt />;
-export const BookOpenIcon = () => <BookOpen />;
-export const BriefcaseIcon = () => <Briefcase />;
-export const CakeIcon = () => <Cake />;
-export const CalculatorIcon = () => <Calculator />;
-export const CalendarIcon = () => <Calendar />;
-export const CameraIcon = () => <Camera />;
-export const CashIcon = () => <Cash />;
-export const ChartBarIcon = () => <ChartBar />;
-export const ChartPieIcon = () => <ChartPie />;
-export const ChartSquareBarIcon = () => <ChartSquareBar />;
-export const ChatIcon = () => <Chat />;
-export const ChatAltIcon = () => <ChatAlt />;
-export const ChatAlt2Icon = () => <ChatAlt2 />;
-export const CheckIcon = () => <Check />;
-export const CheckCircleIcon = () => <CheckCircle />;
-export const ChevronDoubleDownIcon = () => <ChevronDoubleDown />;
-export const ChevronDoubleLeftIcon = () => <ChevronDoubleLeft />;
-export const ChevronDoubleRightIcon = () => <ChevronDoubleRight />;
-export const ChevronDoubleUpIcon = () => <ChevronDoubleUp />;
-export const ChevronDownIcon = () => <ChevronDown />;
-export const ChevronLeftIcon = () => <ChevronLeft />;
-export const ChevronRightIcon = () => <ChevronRight />;
-export const ChevronUpIcon = () => <ChevronUp />;
-export const ChipIcon = () => <Chip />;
-export const ClipboardIcon = () => <Clipboard />;
-export const ClipboardCheckIcon = () => <ClipboardCheck />;
-export const ClipboardCopyIcon = () => <ClipboardCopy />;
-export const ClipboardListIcon = () => <ClipboardList />;
-export const ClockIcon = () => <Clock />;
-export const CloudIcon = () => <Cloud />;
-export const CloudDownloadIcon = () => <CloudDownload />;
-export const CloudUploadIcon = () => <CloudUpload />;
-export const CodeIcon = () => <Code />;
-export const CogIcon = () => <Cog />;
-export const CollectionIcon = () => <Collection />;
-export const ColorSwatchIcon = () => <ColorSwatch />;
-export const CreditCardIcon = () => <CreditCard />;
-export const CubeIcon = () => <Cube />;
-export const CubeTransparentIcon = () => <CubeTransparent />;
-export const CurrencyBangladeshiIcon = () => <CurrencyBangladeshi />;
-export const CurrencyDollarIcon = () => <CurrencyDollar />;
-export const CurrencyEuroIcon = () => <CurrencyEuro />;
-export const CurrencyPoundIcon = () => <CurrencyPound />;
-export const CurrencyRupeeIcon = () => <CurrencyRupee />;
-export const CurrencyYenIcon = () => <CurrencyYen />;
-export const CursorClickIcon = () => <CursorClick />;
-export const DatabaseIcon = () => <Database />;
-export const DesktopComputerIcon = () => <DesktopComputer />;
-export const DeviceMobileIcon = () => <DeviceMobile />;
-export const DeviceTabletIcon = () => <DeviceTablet />;
-export const DocumentIcon = () => <Document />;
-export const DocumentAddIcon = () => <DocumentAdd />;
-export const DocumentDownloadIcon = () => <DocumentDownload />;
-export const DocumentDuplicateIcon = () => <DocumentDuplicate />;
-export const DocumentRemoveIcon = () => <DocumentRemove />;
-export const DocumentReportIcon = () => <DocumentReport />;
-export const DocumentSearchIcon = () => <DocumentSearch />;
-export const DocumentTextIcon = () => <DocumentText />;
-export const DotsCircleHorizontalIcon = () => <DotsCircleHorizontal />;
-export const DotsHorizontalIcon = () => <DotsHorizontal />;
-export const DotsVerticalIcon = () => <DotsVertical />;
-export const DownloadIcon = () => <Download />;
-export const DuplicateIcon = () => <Duplicate />;
-export const EmojiHappyIcon = () => <EmojiHappy />;
-export const EmojiSadIcon = () => <EmojiSad />;
-export const ExclamationIcon = () => <Exclamation />;
-export const ExclamationCircleIcon = () => <ExclamationCircle />;
-export const ExternalLinkIcon = () => <ExternalLink />;
-export const EyeIcon = () => <Eye />;
-export const EyeOffIcon = () => <EyeOff />;
-export const FastForwardIcon = () => <FastForward />;
-export const FilmIcon = () => <Film />;
-export const FilterIcon = () => <Filter />;
-export const FingerPrintIcon = () => <FingerPrint />;
-export const FireIcon = () => <Fire />;
-export const FlagIcon = () => <Flag />;
-export const FolderIcon = () => <Folder />;
-export const FolderAddIcon = () => <FolderAdd />;
-export const FolderDownloadIcon = () => <FolderDownload />;
-export const FolderOpenIcon = () => <FolderOpen />;
-export const FolderRemoveIcon = () => <FolderRemove />;
-export const GiftIcon = () => <Gift />;
-export const GitBranchIcon = () => <GitBranch />;
-export const GitCommitIcon = () => <GitCommit />;
-export const GitCompareIcon = () => <GitCompare />;
-export const GitMergeIcon = () => <GitMerge />;
-export const GitMergeQueueIcon = () => <GitMergeQueue />;
-export const GitPullRequestIcon = () => <GitPullRequest />;
-export const GitPullRequestClosedIcon = () => <GitPullRequestClosed />;
-export const GitPullRequestDraftIcon = () => <GitPullRequestDraft />;
-export const GitRepoForkedIcon = () => <GitRepoForked />;
-export const GlobeIcon = () => <Globe />;
-export const GlobeAltIcon = () => <GlobeAlt />;
-export const HandIcon = () => <Hand />;
-export const HashtagIcon = () => <Hashtag />;
-export const HeartIcon = () => <Heart />;
-export const HomeIcon = () => <Home />;
-export const IdentificationIcon = () => <Identification />;
-export const InboxIcon = () => <Inbox />;
-export const InboxInIcon = () => <InboxIn />;
-export const InformationCircleIcon = () => <InformationCircle />;
-export const JiraBugIcon = () => <JiraBug />;
-export const JiraCustomIcon = () => <JiraCustom />;
-export const JiraEpicIcon = () => <JiraEpic />;
-export const JiraInitiativeIcon = () => <JiraInitiative />;
-export const JiraPriorityHighIcon = () => <JiraPriorityHigh />;
-export const JiraPriorityHighestIcon = () => <JiraPriorityHighest />;
-export const JiraPriorityLowIcon = () => <JiraPriorityLow />;
-export const JiraPriorityLowestIcon = () => <JiraPriorityLowest />;
-export const JiraPriorityMediumIcon = () => <JiraPriorityMedium />;
-export const JiraStoryIcon = () => <JiraStory />;
-export const JiraSubtaskIcon = () => <JiraSubtask />;
-export const JiraTaskIcon = () => <JiraTask />;
-export const KeyIcon = () => <Key />;
-export const LibraryIcon = () => <Library />;
-export const LightBulbIcon = () => <LightBulb />;
-export const LightningBoltIcon = () => <LightningBolt />;
-export const LinkIcon = () => <Link />;
-export const LocationMarkerIcon = () => <LocationMarker />;
-export const LockClosedIcon = () => <LockClosed />;
-export const LockOpenIcon = () => <LockOpen />;
-export const LoginIcon = () => <Login />;
-export const LogoutIcon = () => <Logout />;
-export const MailIcon = () => <Mail />;
-export const MailOpenIcon = () => <MailOpen />;
-export const MapIcon = () => <Map />;
-export const MenuIcon = () => <Menu />;
-export const MenuAlt1Icon = () => <MenuAlt1 />;
-export const MenuAlt2Icon = () => <MenuAlt2 />;
-export const MenuAlt3Icon = () => <MenuAlt3 />;
-export const MenuAlt4Icon = () => <MenuAlt4 />;
-export const MicrophoneIcon = () => <Microphone />;
-export const MinusIcon = () => <Minus />;
-export const MinusCircleIcon = () => <MinusCircle />;
-export const MoonIcon = () => <Moon />;
-export const MusicNoteIcon = () => <MusicNote />;
-export const NewspaperIcon = () => <Newspaper />;
-export const OfficeBuildingIcon = () => <OfficeBuilding />;
-export const PaperAirplaneIcon = () => <PaperAirplane />;
-export const PaperClipIcon = () => <PaperClip />;
-export const PauseIcon = () => <Pause />;
-export const PauseSolidIcon = () => <PauseSolid />;
-export const PencilIcon = () => <Pencil />;
-export const PencilAltIcon = () => <PencilAlt />;
-export const PhoneIcon = () => <Phone />;
-export const PhoneIncomingIcon = () => <PhoneIncoming />;
-export const PhoneMissedCallIcon = () => <PhoneMissedCall />;
-export const PhoneOutgoingIcon = () => <PhoneOutgoing />;
-export const PhotographIcon = () => <Photograph />;
-export const PlayIcon = () => <Play />;
-export const PlaySolidIcon = () => <PlaySolid />;
-export const PlusIcon = () => <Plus />;
-export const PlusCircleIcon = () => <PlusCircle />;
-export const PresentationChartBarIcon = () => <PresentationChartBar />;
-export const PresentationChartLineIcon = () => <PresentationChartLine />;
-export const PrinterIcon = () => <Printer />;
-export const PuzzleIcon = () => <Puzzle />;
-export const QrcodeIcon = () => <Qrcode />;
-export const QuestionMarkCircleIcon = () => <QuestionMarkCircle />;
-export const ReceiptRefundIcon = () => <ReceiptRefund />;
-export const ReceiptTaxIcon = () => <ReceiptTax />;
-export const RefreshIcon = () => <Refresh />;
-export const ReplyIcon = () => <Reply />;
-export const RewindIcon = () => <Rewind />;
-export const RssIcon = () => <Rss />;
-export const SaveIcon = () => <Save />;
-export const SaveAsIcon = () => <SaveAs />;
-export const ScaleIcon = () => <Scale />;
-export const ScissorsIcon = () => <Scissors />;
-export const SearchIcon = () => <Search />;
-export const SearchCircleIcon = () => <SearchCircle />;
-export const SelectorIcon = () => <Selector />;
-export const ServerIcon = () => <Server />;
-export const ShareIcon = () => <Share />;
-export const ShieldCheckIcon = () => <ShieldCheck />;
-export const ShieldExclamationIcon = () => <ShieldExclamation />;
-export const ShoppingBagIcon = () => <ShoppingBag />;
-export const ShoppingCartIcon = () => <ShoppingCart />;
-export const SortAscendingIcon = () => <SortAscending />;
-export const SortDescendingIcon = () => <SortDescending />;
-export const SparklesIcon = () => <Sparkles />;
-export const SpeakerphoneIcon = () => <Speakerphone />;
-export const StarIcon = () => <Star />;
-export const StatusOfflineIcon = () => <StatusOffline />;
-export const StatusOnlineIcon = () => <StatusOnline />;
-export const StopIcon = () => <Stop />;
-export const SunIcon = () => <Sun />;
-export const SupportIcon = () => <Support />;
-export const SwitchHorizontalIcon = () => <SwitchHorizontal />;
-export const SwitchVerticalIcon = () => <SwitchVertical />;
-export const TableIcon = () => <Table />;
-export const TagIcon = () => <Tag />;
-export const TemplateIcon = () => <Template />;
-export const TerminalIcon = () => <Terminal />;
-export const ThumbDownIcon = () => <ThumbDown />;
-export const ThumbUpIcon = () => <ThumbUp />;
-export const TicketIcon = () => <Ticket />;
-export const TranslateIcon = () => <Translate />;
-export const TrashIcon = () => <Trash />;
-export const TrendingDownIcon = () => <TrendingDown />;
-export const TrendingUpIcon = () => <TrendingUp />;
-export const TruckIcon = () => <Truck />;
-export const UploadIcon = () => <Upload />;
-export const UserIcon = () => <User />;
-export const UserAddIcon = () => <UserAdd />;
-export const UserCircleIcon = () => <UserCircle />;
-export const UserGroupIcon = () => <UserGroup />;
-export const UserRemoveIcon = () => <UserRemove />;
-export const UsersIcon = () => <Users />;
-export const VariableIcon = () => <Variable />;
-export const VideoCameraIcon = () => <VideoCamera />;
-export const ViewBoardsIcon = () => <ViewBoards />;
-export const ViewGridIcon = () => <ViewGrid />;
-export const ViewGridAddIcon = () => <ViewGridAdd />;
-export const ViewListIcon = () => <ViewList />;
-export const VolumeOffIcon = () => <VolumeOff />;
-export const VolumeUpIcon = () => <VolumeUp />;
-export const WifiIcon = () => <Wifi />;
-export const XIcon = () => <X />;
-export const XCircleIcon = () => <XCircle />;
-export const ZoomInIcon = () => <ZoomIn />;
-export const ZoomOutIcon = () => <ZoomOut />;
+export const AcademicCapIcon = ({ ...props }) => <AcademicCap {...props} />;
+export const AdjustmentsIcon = ({ ...props }) => <Adjustments {...props} />;
+export const AnnotationIcon = ({ ...props }) => <Annotation {...props} />;
+export const ArchiveIcon = ({ ...props }) => <Archive {...props} />;
+export const ArrowCircleDownIcon = ({ ...props }) => (
+  <ArrowCircleDown {...props} />
+);
+export const ArrowCircleLeftIcon = ({ ...props }) => (
+  <ArrowCircleLeft {...props} />
+);
+export const ArrowCircleRightIcon = ({ ...props }) => (
+  <ArrowCircleRight {...props} />
+);
+export const ArrowCircleUpIcon = ({ ...props }) => <ArrowCircleUp {...props} />;
+export const ArrowDownIcon = ({ ...props }) => <ArrowDown {...props} />;
+export const ArrowLeftIcon = ({ ...props }) => <ArrowLeft {...props} />;
+export const ArrowNarrowDownIcon = ({ ...props }) => (
+  <ArrowNarrowDown {...props} />
+);
+export const ArrowNarrowLeftIcon = ({ ...props }) => (
+  <ArrowNarrowLeft {...props} />
+);
+export const ArrowNarrowRightIcon = ({ ...props }) => (
+  <ArrowNarrowRight {...props} />
+);
+export const ArrowNarrowUpIcon = ({ ...props }) => <ArrowNarrowUp {...props} />;
+export const ArrowRightIcon = ({ ...props }) => <ArrowRight {...props} />;
+export const ArrowsExpandIcon = ({ ...props }) => <ArrowsExpand {...props} />;
+export const ArrowUpIcon = ({ ...props }) => <ArrowUp {...props} />;
+export const ArrowUpTrayIcon = ({ ...props }) => <ArrowUpTray {...props} />;
+export const AtSymbolIcon = ({ ...props }) => <AtSymbol {...props} />;
+export const BackspaceIcon = ({ ...props }) => <Backspace {...props} />;
+export const BadgeCheckIcon = ({ ...props }) => <BadgeCheck {...props} />;
+export const BanIcon = ({ ...props }) => <Ban {...props} />;
+export const BeakerIcon = ({ ...props }) => <Beaker {...props} />;
+export const BellIcon = ({ ...props }) => <Bell {...props} />;
+export const BookmarkIcon = ({ ...props }) => <Bookmark {...props} />;
+export const BookmarkAltIcon = ({ ...props }) => <BookmarkAlt {...props} />;
+export const BookOpenIcon = ({ ...props }) => <BookOpen {...props} />;
+export const BriefcaseIcon = ({ ...props }) => <Briefcase {...props} />;
+export const CakeIcon = ({ ...props }) => <Cake {...props} />;
+export const CalculatorIcon = ({ ...props }) => <Calculator {...props} />;
+export const CalendarIcon = ({ ...props }) => <Calendar {...props} />;
+export const CameraIcon = ({ ...props }) => <Camera {...props} />;
+export const CashIcon = ({ ...props }) => <Cash {...props} />;
+export const ChartBarIcon = ({ ...props }) => <ChartBar {...props} />;
+export const ChartPieIcon = ({ ...props }) => <ChartPie {...props} />;
+export const ChartSquareBarIcon = ({ ...props }) => (
+  <ChartSquareBar {...props} />
+);
+export const ChatIcon = ({ ...props }) => <Chat {...props} />;
+export const ChatAltIcon = ({ ...props }) => <ChatAlt {...props} />;
+export const ChatAlt2Icon = ({ ...props }) => <ChatAlt2 {...props} />;
+export const CheckIcon = ({ ...props }) => <Check {...props} />;
+export const CheckCircleIcon = ({ ...props }) => <CheckCircle {...props} />;
+export const ChevronDoubleDownIcon = ({ ...props }) => (
+  <ChevronDoubleDown {...props} />
+);
+export const ChevronDoubleLeftIcon = ({ ...props }) => (
+  <ChevronDoubleLeft {...props} />
+);
+export const ChevronDoubleRightIcon = ({ ...props }) => (
+  <ChevronDoubleRight {...props} />
+);
+export const ChevronDoubleUpIcon = ({ ...props }) => (
+  <ChevronDoubleUp {...props} />
+);
+export const ChevronDownIcon = ({ ...props }) => <ChevronDown {...props} />;
+export const ChevronLeftIcon = ({ ...props }) => <ChevronLeft {...props} />;
+export const ChevronRightIcon = ({ ...props }) => <ChevronRight {...props} />;
+export const ChevronUpIcon = ({ ...props }) => <ChevronUp {...props} />;
+export const ChipIcon = ({ ...props }) => <Chip {...props} />;
+export const ClipboardIcon = ({ ...props }) => <Clipboard {...props} />;
+export const ClipboardCheckIcon = ({ ...props }) => (
+  <ClipboardCheck {...props} />
+);
+export const ClipboardCopyIcon = ({ ...props }) => <ClipboardCopy {...props} />;
+export const ClipboardListIcon = ({ ...props }) => <ClipboardList {...props} />;
+export const ClockIcon = ({ ...props }) => <Clock {...props} />;
+export const CloudIcon = ({ ...props }) => <Cloud {...props} />;
+export const CloudDownloadIcon = ({ ...props }) => <CloudDownload {...props} />;
+export const CloudUploadIcon = ({ ...props }) => <CloudUpload {...props} />;
+export const CodeIcon = ({ ...props }) => <Code {...props} />;
+export const CogIcon = ({ ...props }) => <Cog {...props} />;
+export const CollectionIcon = ({ ...props }) => <Collection {...props} />;
+export const ColorSwatchIcon = ({ ...props }) => <ColorSwatch {...props} />;
+export const CreditCardIcon = ({ ...props }) => <CreditCard {...props} />;
+export const CubeIcon = ({ ...props }) => <Cube {...props} />;
+export const CubeTransparentIcon = ({ ...props }) => (
+  <CubeTransparent {...props} />
+);
+export const CurrencyBangladeshiIcon = ({ ...props }) => (
+  <CurrencyBangladeshi {...props} />
+);
+export const CurrencyDollarIcon = ({ ...props }) => (
+  <CurrencyDollar {...props} />
+);
+export const CurrencyEuroIcon = ({ ...props }) => <CurrencyEuro {...props} />;
+export const CurrencyPoundIcon = ({ ...props }) => <CurrencyPound {...props} />;
+export const CurrencyRupeeIcon = ({ ...props }) => <CurrencyRupee {...props} />;
+export const CurrencyYenIcon = ({ ...props }) => <CurrencyYen {...props} />;
+export const CursorClickIcon = ({ ...props }) => <CursorClick {...props} />;
+export const DatabaseIcon = ({ ...props }) => <Database {...props} />;
+export const DesktopComputerIcon = ({ ...props }) => (
+  <DesktopComputer {...props} />
+);
+export const DeviceMobileIcon = ({ ...props }) => <DeviceMobile {...props} />;
+export const DeviceTabletIcon = ({ ...props }) => <DeviceTablet {...props} />;
+export const DocumentIcon = ({ ...props }) => <Document {...props} />;
+export const DocumentAddIcon = ({ ...props }) => <DocumentAdd {...props} />;
+export const DocumentDownloadIcon = ({ ...props }) => (
+  <DocumentDownload {...props} />
+);
+export const DocumentDuplicateIcon = ({ ...props }) => (
+  <DocumentDuplicate {...props} />
+);
+export const DocumentRemoveIcon = ({ ...props }) => (
+  <DocumentRemove {...props} />
+);
+export const DocumentReportIcon = ({ ...props }) => (
+  <DocumentReport {...props} />
+);
+export const DocumentSearchIcon = ({ ...props }) => (
+  <DocumentSearch {...props} />
+);
+export const DocumentTextIcon = ({ ...props }) => <DocumentText {...props} />;
+export const DotsCircleHorizontalIcon = ({ ...props }) => (
+  <DotsCircleHorizontal {...props} />
+);
+export const DotsHorizontalIcon = ({ ...props }) => (
+  <DotsHorizontal {...props} />
+);
+export const DotsVerticalIcon = ({ ...props }) => <DotsVertical {...props} />;
+export const DownloadIcon = ({ ...props }) => <Download {...props} />;
+export const DuplicateIcon = ({ ...props }) => <Duplicate {...props} />;
+export const EmojiHappyIcon = ({ ...props }) => <EmojiHappy {...props} />;
+export const EmojiSadIcon = ({ ...props }) => <EmojiSad {...props} />;
+export const ExclamationIcon = ({ ...props }) => <Exclamation {...props} />;
+export const ExclamationCircleIcon = ({ ...props }) => (
+  <ExclamationCircle {...props} />
+);
+export const ExternalLinkIcon = ({ ...props }) => <ExternalLink {...props} />;
+export const EyeIcon = ({ ...props }) => <Eye {...props} />;
+export const EyeOffIcon = ({ ...props }) => <EyeOff {...props} />;
+export const FastForwardIcon = ({ ...props }) => <FastForward {...props} />;
+export const FilmIcon = ({ ...props }) => <Film {...props} />;
+export const FilterIcon = ({ ...props }) => <Filter {...props} />;
+export const FingerPrintIcon = ({ ...props }) => <FingerPrint {...props} />;
+export const FireIcon = ({ ...props }) => <Fire {...props} />;
+export const FlagIcon = ({ ...props }) => <Flag {...props} />;
+export const FolderIcon = ({ ...props }) => <Folder {...props} />;
+export const FolderAddIcon = ({ ...props }) => <FolderAdd {...props} />;
+export const FolderDownloadIcon = ({ ...props }) => (
+  <FolderDownload {...props} />
+);
+export const FolderOpenIcon = ({ ...props }) => <FolderOpen {...props} />;
+export const FolderRemoveIcon = ({ ...props }) => <FolderRemove {...props} />;
+export const GiftIcon = ({ ...props }) => <Gift {...props} />;
+export const GitBranchIcon = ({ ...props }) => <GitBranch {...props} />;
+export const GitCommitIcon = ({ ...props }) => <GitCommit {...props} />;
+export const GitCompareIcon = ({ ...props }) => <GitCompare {...props} />;
+export const GitMergeIcon = ({ ...props }) => <GitMerge {...props} />;
+export const GitMergeQueueIcon = ({ ...props }) => <GitMergeQueue {...props} />;
+export const GitPullRequestIcon = ({ ...props }) => (
+  <GitPullRequest {...props} />
+);
+export const GitPullRequestClosedIcon = ({ ...props }) => (
+  <GitPullRequestClosed {...props} />
+);
+export const GitPullRequestDraftIcon = ({ ...props }) => (
+  <GitPullRequestDraft {...props} />
+);
+export const GitRepoForkedIcon = ({ ...props }) => <GitRepoForked {...props} />;
+export const GlobeIcon = ({ ...props }) => <Globe {...props} />;
+export const GlobeAltIcon = ({ ...props }) => <GlobeAlt {...props} />;
+export const HandIcon = ({ ...props }) => <Hand {...props} />;
+export const HashtagIcon = ({ ...props }) => <Hashtag {...props} />;
+export const HeartIcon = ({ ...props }) => <Heart {...props} />;
+export const HomeIcon = ({ ...props }) => <Home {...props} />;
+export const IdentificationIcon = ({ ...props }) => (
+  <Identification {...props} />
+);
+export const InboxIcon = ({ ...props }) => <Inbox {...props} />;
+export const InboxInIcon = ({ ...props }) => <InboxIn {...props} />;
+export const InformationCircleIcon = ({ ...props }) => (
+  <InformationCircle {...props} />
+);
+export const JiraBugIcon = ({ ...props }) => <JiraBug {...props} />;
+export const JiraCustomIcon = ({ ...props }) => <JiraCustom {...props} />;
+export const JiraEpicIcon = ({ ...props }) => <JiraEpic {...props} />;
+export const JiraInitiativeIcon = ({ ...props }) => (
+  <JiraInitiative {...props} />
+);
+export const JiraPriorityHighIcon = ({ ...props }) => (
+  <JiraPriorityHigh {...props} />
+);
+export const JiraPriorityHighestIcon = ({ ...props }) => (
+  <JiraPriorityHighest {...props} />
+);
+export const JiraPriorityLowIcon = ({ ...props }) => (
+  <JiraPriorityLow {...props} />
+);
+export const JiraPriorityLowestIcon = ({ ...props }) => (
+  <JiraPriorityLowest {...props} />
+);
+export const JiraPriorityMediumIcon = ({ ...props }) => (
+  <JiraPriorityMedium {...props} />
+);
+export const JiraStoryIcon = ({ ...props }) => <JiraStory {...props} />;
+export const JiraSubtaskIcon = ({ ...props }) => <JiraSubtask {...props} />;
+export const JiraTaskIcon = ({ ...props }) => <JiraTask {...props} />;
+export const KeyIcon = ({ ...props }) => <Key {...props} />;
+export const LibraryIcon = ({ ...props }) => <Library {...props} />;
+export const LightBulbIcon = ({ ...props }) => <LightBulb {...props} />;
+export const LightningBoltIcon = ({ ...props }) => <LightningBolt {...props} />;
+export const LinkIcon = ({ ...props }) => <Link {...props} />;
+export const LocationMarkerIcon = ({ ...props }) => (
+  <LocationMarker {...props} />
+);
+export const LockClosedIcon = ({ ...props }) => <LockClosed {...props} />;
+export const LockOpenIcon = ({ ...props }) => <LockOpen {...props} />;
+export const LoginIcon = ({ ...props }) => <Login {...props} />;
+export const LogoutIcon = ({ ...props }) => <Logout {...props} />;
+export const MailIcon = ({ ...props }) => <Mail {...props} />;
+export const MailOpenIcon = ({ ...props }) => <MailOpen {...props} />;
+export const MapIcon = ({ ...props }) => <Map {...props} />;
+export const MenuIcon = ({ ...props }) => <Menu {...props} />;
+export const MenuAlt1Icon = ({ ...props }) => <MenuAlt1 {...props} />;
+export const MenuAlt2Icon = ({ ...props }) => <MenuAlt2 {...props} />;
+export const MenuAlt3Icon = ({ ...props }) => <MenuAlt3 {...props} />;
+export const MenuAlt4Icon = ({ ...props }) => <MenuAlt4 {...props} />;
+export const MicrophoneIcon = ({ ...props }) => <Microphone {...props} />;
+export const MinusIcon = ({ ...props }) => <Minus {...props} />;
+export const MinusCircleIcon = ({ ...props }) => <MinusCircle {...props} />;
+export const MoonIcon = ({ ...props }) => <Moon {...props} />;
+export const MusicNoteIcon = ({ ...props }) => <MusicNote {...props} />;
+export const NewspaperIcon = ({ ...props }) => <Newspaper {...props} />;
+export const OfficeBuildingIcon = ({ ...props }) => (
+  <OfficeBuilding {...props} />
+);
+export const PaperAirplaneIcon = ({ ...props }) => <PaperAirplane {...props} />;
+export const PaperClipIcon = ({ ...props }) => <PaperClip {...props} />;
+export const PauseIcon = ({ ...props }) => <Pause {...props} />;
+export const PauseSolidIcon = ({ ...props }) => <PauseSolid {...props} />;
+export const PencilIcon = ({ ...props }) => <Pencil {...props} />;
+export const PencilAltIcon = ({ ...props }) => <PencilAlt {...props} />;
+export const PhoneIcon = ({ ...props }) => <Phone {...props} />;
+export const PhoneIncomingIcon = ({ ...props }) => <PhoneIncoming {...props} />;
+export const PhoneMissedCallIcon = ({ ...props }) => (
+  <PhoneMissedCall {...props} />
+);
+export const PhoneOutgoingIcon = ({ ...props }) => <PhoneOutgoing {...props} />;
+export const PhotographIcon = ({ ...props }) => <Photograph {...props} />;
+export const PlayIcon = ({ ...props }) => <Play {...props} />;
+export const PlaySolidIcon = ({ ...props }) => <PlaySolid {...props} />;
+export const PlusIcon = ({ ...props }) => <Plus {...props} />;
+export const PlusCircleIcon = ({ ...props }) => <PlusCircle {...props} />;
+export const PresentationChartBarIcon = ({ ...props }) => (
+  <PresentationChartBar {...props} />
+);
+export const PresentationChartLineIcon = ({ ...props }) => (
+  <PresentationChartLine {...props} />
+);
+export const PrinterIcon = ({ ...props }) => <Printer {...props} />;
+export const PuzzleIcon = ({ ...props }) => <Puzzle {...props} />;
+export const QrcodeIcon = ({ ...props }) => <Qrcode {...props} />;
+export const QuestionMarkCircleIcon = ({ ...props }) => (
+  <QuestionMarkCircle {...props} />
+);
+export const ReceiptRefundIcon = ({ ...props }) => <ReceiptRefund {...props} />;
+export const ReceiptTaxIcon = ({ ...props }) => <ReceiptTax {...props} />;
+export const RefreshIcon = ({ ...props }) => <Refresh {...props} />;
+export const ReplyIcon = ({ ...props }) => <Reply {...props} />;
+export const RewindIcon = ({ ...props }) => <Rewind {...props} />;
+export const RssIcon = ({ ...props }) => <Rss {...props} />;
+export const SaveIcon = ({ ...props }) => <Save {...props} />;
+export const SaveAsIcon = ({ ...props }) => <SaveAs {...props} />;
+export const ScaleIcon = ({ ...props }) => <Scale {...props} />;
+export const ScissorsIcon = ({ ...props }) => <Scissors {...props} />;
+export const SearchIcon = ({ ...props }) => <Search {...props} />;
+export const SearchCircleIcon = ({ ...props }) => <SearchCircle {...props} />;
+export const SelectorIcon = ({ ...props }) => <Selector {...props} />;
+export const ServerIcon = ({ ...props }) => <Server {...props} />;
+export const ShareIcon = ({ ...props }) => <Share {...props} />;
+export const ShieldCheckIcon = ({ ...props }) => <ShieldCheck {...props} />;
+export const ShieldExclamationIcon = ({ ...props }) => (
+  <ShieldExclamation {...props} />
+);
+export const ShoppingBagIcon = ({ ...props }) => <ShoppingBag {...props} />;
+export const ShoppingCartIcon = ({ ...props }) => <ShoppingCart {...props} />;
+export const SortAscendingIcon = ({ ...props }) => <SortAscending {...props} />;
+export const SortDescendingIcon = ({ ...props }) => (
+  <SortDescending {...props} />
+);
+export const SparklesIcon = ({ ...props }) => <Sparkles {...props} />;
+export const SpeakerphoneIcon = ({ ...props }) => <Speakerphone {...props} />;
+export const StarIcon = ({ ...props }) => <Star {...props} />;
+export const StatusOfflineIcon = ({ ...props }) => <StatusOffline {...props} />;
+export const StatusOnlineIcon = ({ ...props }) => <StatusOnline {...props} />;
+export const StopIcon = ({ ...props }) => <Stop {...props} />;
+export const SunIcon = ({ ...props }) => <Sun {...props} />;
+export const SupportIcon = ({ ...props }) => <Support {...props} />;
+export const SwitchHorizontalIcon = ({ ...props }) => (
+  <SwitchHorizontal {...props} />
+);
+export const SwitchVerticalIcon = ({ ...props }) => (
+  <SwitchVertical {...props} />
+);
+export const TableIcon = ({ ...props }) => <Table {...props} />;
+export const TagIcon = ({ ...props }) => <Tag {...props} />;
+export const TemplateIcon = ({ ...props }) => <Template {...props} />;
+export const TerminalIcon = ({ ...props }) => <Terminal {...props} />;
+export const ThumbDownIcon = ({ ...props }) => <ThumbDown {...props} />;
+export const ThumbUpIcon = ({ ...props }) => <ThumbUp {...props} />;
+export const TicketIcon = ({ ...props }) => <Ticket {...props} />;
+export const TranslateIcon = ({ ...props }) => <Translate {...props} />;
+export const TrashIcon = ({ ...props }) => <Trash {...props} />;
+export const TrendingDownIcon = ({ ...props }) => <TrendingDown {...props} />;
+export const TrendingUpIcon = ({ ...props }) => <TrendingUp {...props} />;
+export const TruckIcon = ({ ...props }) => <Truck {...props} />;
+export const UploadIcon = ({ ...props }) => <Upload {...props} />;
+export const UserIcon = ({ ...props }) => <User {...props} />;
+export const UserAddIcon = ({ ...props }) => <UserAdd {...props} />;
+export const UserCircleIcon = ({ ...props }) => <UserCircle {...props} />;
+export const UserGroupIcon = ({ ...props }) => <UserGroup {...props} />;
+export const UserRemoveIcon = ({ ...props }) => <UserRemove {...props} />;
+export const UsersIcon = ({ ...props }) => <Users {...props} />;
+export const VariableIcon = ({ ...props }) => <Variable {...props} />;
+export const VideoCameraIcon = ({ ...props }) => <VideoCamera {...props} />;
+export const ViewBoardsIcon = ({ ...props }) => <ViewBoards {...props} />;
+export const ViewGridIcon = ({ ...props }) => <ViewGrid {...props} />;
+export const ViewGridAddIcon = ({ ...props }) => <ViewGridAdd {...props} />;
+export const ViewListIcon = ({ ...props }) => <ViewList {...props} />;
+export const VolumeOffIcon = ({ ...props }) => <VolumeOff {...props} />;
+export const VolumeUpIcon = ({ ...props }) => <VolumeUp {...props} />;
+export const WifiIcon = ({ ...props }) => <Wifi {...props} />;
+export const XIcon = ({ ...props }) => <X {...props} />;
+export const XCircleIcon = ({ ...props }) => <XCircle {...props} />;
+export const ZoomInIcon = ({ ...props }) => <ZoomIn {...props} />;
+export const ZoomOutIcon = ({ ...props }) => <ZoomOut {...props} />;
 
 export default {
   AcademicCapIcon,
