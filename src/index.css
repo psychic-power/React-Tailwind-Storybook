@@ -38,3 +38,12 @@ caption {
 caption .second {
   @apply font-inter font-semibold text-caption2;
 }
+
+svg path {
+  fill: currentColor;
+}
+
+.normal svg {
+  width: 16px;
+  height: 16px;
+}

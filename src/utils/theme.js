@@ -1,4 +1,4 @@
-const Color = {
+export const Color = {
   background: {
     base:"bg-surface-base-light dark:bg-surface-base-dark",
     overlay:"bg-surface-overlay-light dark:bg-surface-overlay-dark",
@@ -12,7 +12,7 @@ const Color = {
   text: {
     primary: "text-content-primary-light dark:text-content-primary-dark",
     secondary: "text-content-secondary-light dark:text-content-secondary-dark",
-    tetriary: "text-content-primary-light dark:text-content-primary-dark"
+    tetriary: "text-content-tetriary-light dark:text-content-tetriary-dark"
   },
   support: {
     accent: "bg-accent-light dark:bg-accent-dark",
