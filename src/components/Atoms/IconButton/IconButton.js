@@ -1,5 +1,4 @@
 import React from "react";
-import { PlusIcon } from "../../../icons/icon";
 import { Color, Size } from "../../../utils/theme";
 
 /**
@@ -16,13 +15,11 @@ export default function IconButton({ icon, size, ...rest }) {
     <button
       className={`flex justify-center items-center p-0.5 rounded w-fit ${
         size ? Size.icon[size] : Size.icon.lg
-      } ${Color.background.base} hover:${
-        Color.action.hover
-      } focus:${
+      } ${Color.action.hover} ${
         Color.action.selected
-      } opacity-50 hover:opacity-100 focus:opacity-100 focus:${
-        Color.ring.primary
-      } ${Color.text.primary} focus:ring-2`}
+      } opacity-50 hover:opacity-100 focus:opacity-100 ${Color.ring.primary} ${
+        Color.text.primary
+      } focus:ring-2`}
       {...rest}
     >
       {icon}
