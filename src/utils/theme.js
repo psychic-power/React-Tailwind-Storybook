@@ -26,14 +26,15 @@ export const Color = {
   },
   ring: {
     divider: "ring-surface-divider-light dark:ring-surface-divider-dark",
+    primary: "ring-content-primary-light dark:ring-content-primary-dark"
   },
 };
 
 export const Size = {
-  general: { sm: "w-2 h-2", md: "w-4 h-4", lg: "w-6 h-6" },
+  general: { sm: "w-4 h-4", md: "w-6 h-6", lg: "w-8 h-8" },
   icon: {
     sm: "small",
-    md: "normal",
+    md: "medium",
     lg: "large",
   },
 };

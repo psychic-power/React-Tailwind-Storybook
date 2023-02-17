@@ -1,22 +1,31 @@
 import React from "react";
-import DynamicHeroIcon from "../DynamicHeroIcon/DynamicHeroIcon";
+import { PlusIcon } from "../../../icons/icon";
+import { Color, Size } from "../../../utils/theme";
 
 /**
  * This component represents button with icon.
  *
- * @param {string} iconName - Icon name
+ * @param {string} icon - Icon (svg or icon of library)
  * @param {number} size - Icon size and it's size is 4x of number
  * @param {string} color - The variant background color of icon button. Default is surface-base
  * @param rest - The rest of other props. It can include custom style, key, id, alt etc
  */
 
-export default function IconButton({ iconName, size, color, ...rest }) {
+export default function IconButton({ icon, size, ...rest }) {
   return (
     <button
-      className={`flex justify-center items-center p-2 rounded w-fit bg-surface-${color??"base"}-light hover:bg-action-hover-light focus:bg-action-select-light opacity-50 dark:bg-surface-${color??"base"}-dark dark:hover:bg-action-hover-dark dark:focus:bg-action-select-dark hover:opacity-100 focus:opacity-100 focus:ring-gray-800 dark:focus:ring-gray-100 focus:ring-2`}
+      className={`flex justify-center items-center p-0.5 rounded w-fit ${
+        size ? size : Size.icon.lg
+      } ${Color.background.base} hover:${
+        Color.action.hover
+      } focus:${
+        Color.action.selected
+      } opacity-50 hover:opacity-100 focus:opacity-100 focus:${
+        Color.ring.primary
+      } ${Color.text.primary} focus:ring-2`}
       {...rest}
     >
-      <DynamicHeroIcon size={size ? size : 2.5} name={iconName} />
+      {icon}
     </button>
   );
 }

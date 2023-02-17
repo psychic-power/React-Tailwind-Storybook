@@ -74,6 +74,8 @@ module.exports = {
       ringColor: {
         "surface-divider-light": "#E5E7EB",
         "surface-divider-dark": "#1F2A37",
+        "content-primary-light": "#111928",
+        "content-primary-dark": "#F3F4F6",
       },
     },
   },
