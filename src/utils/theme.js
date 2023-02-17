@@ -26,7 +26,8 @@ export const Color = {
   },
   ring: {
     divider: "ring-surface-divider-light dark:ring-surface-divider-dark",
-    primary: "ring-content-primary-light dark:ring-content-primary-dark"
+    primary: "ring-content-primary-light dark:ring-content-primary-dark",
+    rightDivider: "ring-surface-divider-light"
   },
 };
 

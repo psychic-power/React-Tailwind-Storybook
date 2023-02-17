@@ -54,11 +54,11 @@ svg path {
 }
 
 .medium svg {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
 }
 
 .large svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }

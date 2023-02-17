@@ -15,7 +15,7 @@ export default function Avatar({ username, image, size, ...rest }) {
     <>
       {image ? (
         <div
-          className={` rounded-full w-fit ${size ? Size.general[size] : Size.general.md} ${
+          className={` rounded-full w-fit ${Size.general[size] ?? Size.general.md} ${
             Color.ring.divider
           } ring-1`}
           {...rest}
@@ -23,23 +23,23 @@ export default function Avatar({ username, image, size, ...rest }) {
           <img
             src={image}
             alt="avatar"
-            className={`rounded-full ${size ? Size.general[size] : Size.general.md}`}
+            className={`rounded-full ${Size.general[size] ?? Size.general.md} ${Color.ring.rightDivider} ring-1`}
           />
         </div>
       ) : username ? (
         <div
           className={`flex justify-center items-center rounded-full ${
-            size ? Size.general[size] : Size.general.md
-          } ${Color.background.altDark} ${Color.ring.divider} ring-1`}
+            Size.general[size] ?? Size.general.md
+          } ${Color.background.altDark} ${Color.ring.rightDivider} ring-1`}
           {...rest}
         >
           <caption className={`${Color.text.primaryDark}`}>{username}</caption>
         </div>
       ) : (
         <div
-          className={`rounded-full large w-fit ${size ? Size.icon[size] : Size.icon.lg} ${
+          className={`rounded-full w-fit ${Size.icon[size] ?? Size.icon.md} ${
             Color.background.altLight
-          } ${Color.text.tetriaryLight} ${Color.ring.divider} ring-1`}
+          } ${Color.text.tetriaryLight} ${Color.ring.rightDivider} ring-1`}
           {...rest}
         >
           <UserIcon className="p-0.5" />
