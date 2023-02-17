@@ -15,7 +15,7 @@ export default function Avatar({ username, image, size, ...rest }) {
     <>
       {image ? (
         <div
-          className={` rounded-full w-fit ${size ? size : Size.general.lg} ${
+          className={` rounded-full w-fit ${size ? Size.general[size] : Size.general.md} ${
             Color.ring.divider
           } ring-1`}
           {...rest}
@@ -23,13 +23,13 @@ export default function Avatar({ username, image, size, ...rest }) {
           <img
             src={image}
             alt="avatar"
-            className={`rounded-full ${size ? size : Size.general.lg}`}
+            className={`rounded-full ${size ? Size.general[size] : Size.general.md}`}
           />
         </div>
       ) : username ? (
         <div
           className={`flex justify-center items-center rounded-full ${
-            size ? size : Size.general.lg
+            size ? Size.general[size] : Size.general.md
           } ${Color.background.altDark} ${Color.ring.divider} ring-1`}
           {...rest}
         >
@@ -37,7 +37,7 @@ export default function Avatar({ username, image, size, ...rest }) {
         </div>
       ) : (
         <div
-          className={`rounded-full large w-fit ${size ? size : Size.icon.lg} ${
+          className={`rounded-full large w-fit ${size ? Size.icon[size] : Size.icon.lg} ${
             Color.background.altLight
           } ${Color.text.tetriaryLight} ${Color.ring.divider} ring-1`}
           {...rest}

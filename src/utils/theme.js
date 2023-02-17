@@ -33,8 +33,27 @@ export const Color = {
 export const Size = {
   general: { sm: "w-4 h-4", md: "w-6 h-6", lg: "w-8 h-8" },
   icon: {
+    xs: "extraSmall",
     sm: "small",
     md: "medium",
     lg: "large",
   },
 };
+
+export const badgeType = {
+  background: {
+    surface: "bg-surface-alt-light dark:bg-surface-alt-dark",
+    warning: "bg-warning-ten-light dark:bg-warning-ten-dark",
+    success: "bg-success-ten-light dark:bg-success-ten-dark"
+  },
+  text: {
+    surface: "text-content-primary-light dark:text-content-primary-dark",
+    warning: "text-content-warning-light dark:text-content-warning-dark",
+    success: "text-content-success-light dark:text-content-success-dark"
+  },
+  icon: {
+    surface: "text-content-secondary-light dark:text-content-secondary-dark",
+    warning: "text-content-warning-light dark:text-content-warning-dark",
+    success: "text-content-success-light dark:text-content-success-dark"
+  }
+}

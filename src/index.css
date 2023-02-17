@@ -43,6 +43,11 @@ svg path {
   fill: currentColor;
 }
 
+.extraSmall svg {
+  width: 14px;
+  height: 14px;
+}
+
 .small svg {
   width: 16px;
   height: 16px;

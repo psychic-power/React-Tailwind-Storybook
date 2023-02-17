@@ -15,7 +15,7 @@ export default function IconButton({ icon, size, ...rest }) {
   return (
     <button
       className={`flex justify-center items-center p-0.5 rounded w-fit ${
-        size ? size : Size.icon.lg
+        size ? Size.icon[size] : Size.icon.lg
       } ${Color.background.base} hover:${
         Color.action.hover
       } focus:${

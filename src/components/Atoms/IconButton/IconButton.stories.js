@@ -1,10 +1,17 @@
 import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, PlusIcon } from "../../../icons/icon";
-import { Size } from "../../../utils/theme";
 import IconButton from "./IconButton";
 
 export default {
   title: 'Components/Atoms/IconButton',
   component: IconButton,
+  argTypes: {
+    size: {
+      control: {
+        type: "select",
+      },
+      options: ["lg", "md", "sm"],
+    },
+  },
 }
 
 const Template = args => <IconButton {...args} />;
@@ -12,7 +19,7 @@ const Template = args => <IconButton {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   icon: <PlusIcon />,
-  size: Size.icon.lg
+  size: "lg"
 };
 
 export const UpIcon = Template.bind({});
