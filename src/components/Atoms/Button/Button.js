@@ -10,9 +10,15 @@ import { badgeType, Color, Size } from "../../../utils/theme";
  * @param rest - The rest of other props. It can include custom style, key, id, alt etc
  */
 
-export default function Button({ icon, children, ...rest }) {
+export default function Button({
+  icon,
+  onClick = () => {},
+  children,
+  ...rest
+}) {
   return (
     <button
+      onClick={onClick}
       className={`flex justify-center items-center px-3 py-2 rounded w-fit ${Color.background.base} hover:${Color.action.hover} focus:${Color.action.selected} opacity-50 hover:opacity-100 focus:opacity-100 ${Color.ring.primary} ${Color.text.primary} ring-1 focus:ring-2`}
       {...rest}
     >

@@ -10,9 +10,15 @@ import { Color, Size } from "../../../utils/theme";
  * @param rest - The rest of other props. It can include custom style, key, id, alt etc
  */
 
-export default function IconButton({ icon, size, ...rest }) {
+export default function IconButton({
+  icon,
+  onClick = () => {},
+  size,
+  ...rest
+}) {
   return (
     <button
+      onClick={onClick}
       className={`flex justify-center items-center p-0.5 rounded w-fit ${
         size ? Size.icon[size] : Size.icon.lg
       } ${Color.action.hover} ${

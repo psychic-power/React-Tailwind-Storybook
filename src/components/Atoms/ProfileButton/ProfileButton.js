@@ -11,7 +11,13 @@ import Avatar from "../Avatar/Avatar";
  * @param rest - The rest of other props. It can include custom style, key, id, alt etc
  */
 
-export default function ProfileButton({ image, username, size, ...rest }) {
+export default function ProfileButton({
+  image,
+  onClick = () => {},
+  username,
+  size,
+  ...rest
+}) {
   return (
     <button
       className={`flex justify-center items-center p-2 rounded w-fit ${Color.action.hover} ${Color.action.selected} ${Color.ring.primary} focus:ring-2`}
