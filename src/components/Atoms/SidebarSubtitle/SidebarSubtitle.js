@@ -1,6 +1,6 @@
 import React from "react";
-import DynamicHeroIcon from "../DynamicHeroIcon/DynamicHeroIcon";
-import { PMedium } from "../Typography/Typography";
+import { CogIcon } from "../../../icons/icon";
+import { Color, Size } from "../../../utils/theme";
 
 /**
  * This component represents Sidebar sub title.
@@ -9,17 +9,17 @@ import { PMedium } from "../Typography/Typography";
  * @param {string} iconName - Icon name of MenuItem
  * @param {string} content - Title of MenuItem
  * @param {number} width - width class - default is w-full.
- * @param {boolean} rightIcon - Show setting Icon
+ * @param {boolean} setting - Show setting Icon
  * @param {string} color - The background color of menuitem
  * @param {function} onClick - Handling onClick event of subtitle button. 
  * @param rest - The rest of other props. It can include custom style, key, id, alt etc
  */
 
 export default function SidebarSubtitle({
-  iconName,
+  icon,
   content,
   width,
-  rightIcon,
+  setting,
   color,
   onClick = () => console.error("You passed no action to the component"),
   ...rest
@@ -36,18 +36,20 @@ export default function SidebarSubtitle({
       }-dark dark:hover:bg-action-hover-dark`}
       {...rest}
     >
-      <div className="flex">
-        {iconName && (
-          <div className="mr-3">
-            <DynamicHeroIcon size={4} name={iconName} color={"secondary"} />
+      <div className="flex mr-3">
+        {icon && (
+          <div className={`mr-3 ${Color.text.secondary}`}>
+            {icon}
           </div>
         )}
-        <PMedium color={"primary"}>
+        <p className={`medium ${Color.text.primary}`}>
           {content}
-        </PMedium>
+        </p>
       </div>
-      {rightIcon && (
-        <DynamicHeroIcon size={4} name={"Cog8ToothIcon"} color={"secondary"} />
+      {setting && (
+        <div className={`${Color.text.secondary} ${Size.icon.sm} ${Color.icon}`}>
+          <CogIcon />
+        </div>
       )}
     </button>
   );

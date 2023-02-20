@@ -16,14 +16,14 @@ export default function Tab({ tabData, ...rest }) {
       className="flex p-0.5 w-fit rounded bg-surface-alt-light dark:bg-surface-alt-dark"
       {...rest}
     >
-      {tabData?.map((item, key) => (
+      {tabData?.map((item, key) => {
+        console.log("total item => ", item)
+return (
         <TabItem
           key={key}
-          name={item}
-          onItemClicked={() => setActive(key)}
-          current={active === key}
-        />
-      ))}
+          onClick={() => setActive(key)}
+          active={active === key}>{item}</TabItem>
+      )})}
     </div>
   );
 }
