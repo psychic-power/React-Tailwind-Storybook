@@ -8,14 +8,15 @@ import Avatar from "../Avatar/Avatar";
  * @param {string} image - Image url of avatar. If url is empty it'll show avatar baseon username or undefined avatar.
  * @param {string} username - Username for name avatar
  * @param {number} size - Avatar size. "lg", "md", "sm"
+ * @param {function} onClick - OnClick event of profile button 
  * @param rest - The rest of other props. It can include custom style, key, id, alt etc
  */
 
 export default function ProfileButton({
   image,
-  onClick = () => {},
   username,
   size,
+  onClick = () => {},
   ...rest
 }) {
   return (

@@ -11,7 +11,7 @@ import { PMedium } from "../Typography/Typography";
  * @param {number} width - width class - default is w-full.
  * @param {boolean} rightIcon - Show setting Icon
  * @param {string} color - The background color of menuitem
- * @param {function} onItemClicked - Handling onClick event of subtitle button. 
+ * @param {function} onClick - Handling onClick event of subtitle button. 
  * @param rest - The rest of other props. It can include custom style, key, id, alt etc
  */
 
@@ -21,12 +21,12 @@ export default function SidebarSubtitle({
   width,
   rightIcon,
   color,
-  onItemClicked = () => console.error("You passed no action to the component"),
+  onClick = () => console.error("You passed no action to the component"),
   ...rest
 }) {
   return (
     <button
-      onClick={onItemClicked}
+      onClick={onClick}
       className={`flex justify-between items-center p-2 rounded ${
         width ?? "w-full"
       } bg-surface-${

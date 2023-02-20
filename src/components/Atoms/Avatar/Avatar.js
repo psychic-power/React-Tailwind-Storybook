@@ -39,7 +39,7 @@ export default function Avatar({ username, image, size, ...rest }) {
         <div
           className={`rounded-full w-fit ${Size.icon[size] ?? Size.icon.md} ${
             Color.background.altLight
-          } ${Color.text.tetriaryLight} ${Color.ring.rightDivider} ring-1`}
+          } ${Color.text.tetriaryLight} ${Color.ring.rightDivider} ${Color.icon} ring-1`}
           {...rest}
         >
           <UserIcon className="p-0.5" />

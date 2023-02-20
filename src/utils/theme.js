@@ -30,6 +30,7 @@ export const Color = {
     accent: "ring-accent-light dark:ring-accent-dark",
     rightDivider: "ring-surface-divider-light"
   },
+  icon: "custom",
 };
 
 export const Size = {

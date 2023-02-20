@@ -39,7 +39,8 @@ caption.second {
   @apply font-inter font-semibold text-caption2;
 }
 
-svg path {
+/* This allows you to set the icon color per parent*/
+.custom svg path {
   fill: currentColor;
 }
 

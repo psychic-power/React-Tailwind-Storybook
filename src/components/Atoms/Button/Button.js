@@ -5,7 +5,7 @@ import { badgeType, Color, Size } from "../../../utils/theme";
  * This component represents button with icon.
  *
  * @param {string} icon - Icon (svg or icon of library)
- * @param {number} size - Icon size and it's size is 4x of number
+ * @param {function} onClick - onClick event of button
  * @param {string} color - The variant background color of icon button. Default is surface-base
  * @param rest - The rest of other props. It can include custom style, key, id, alt etc
  */
@@ -23,7 +23,7 @@ export default function Button({
       {...rest}
     >
       {icon && (
-        <div className={`${badgeType.icon.surface} ${Size.icon.sm} mr-1.5`}>
+        <div className={`${badgeType.icon.surface} ${Size.icon.sm} ${Color.icon} mr-1.5`}>
           {icon}
         </div>
       )}

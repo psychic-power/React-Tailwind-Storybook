@@ -6,7 +6,7 @@ import { Color, Size } from "../../../utils/theme";
  *
  * @param {string} icon - Icon (svg or icon of library)
  * @param {number} size - Icon size and it's size is 4x of number
- * @param {string} color - The variant background color of icon button. Default is surface-base
+ * @param {function} onClick - onClick event of Iconbutton
  * @param rest - The rest of other props. It can include custom style, key, id, alt etc
  */
 
@@ -25,7 +25,7 @@ export default function IconButton({
         Color.action.selected
       } opacity-50 hover:opacity-100 focus:opacity-100 ${Color.ring.primary} ${
         Color.text.primary
-      } focus:ring-2`}
+      } focus:ring-2 ${Color.icon}`}
       {...rest}
     >
       {icon}
