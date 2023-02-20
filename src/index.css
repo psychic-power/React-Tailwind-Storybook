@@ -23,11 +23,11 @@ p {
   @apply font-inter font-normal text-p;
 }
 
-p .semibold {
+p.semibold {
   @apply font-inter font-semibold text-p;
 }
 
-p .medium {
+p.medium {
   @apply font-inter font-medium text-p;
 }
 
@@ -35,15 +35,31 @@ caption {
   @apply font-inter font-semibold text-caption;
 }
 
-caption .second {
+caption.second {
   @apply font-inter font-semibold text-caption2;
 }
 
-svg path {
+/* This allows you to set the icon color per parent*/
+.custom svg path {
   fill: currentColor;
 }
 
-.normal svg {
+.extraSmall svg {
+  width: 14px;
+  height: 14px;
+}
+
+.small svg {
   width: 16px;
   height: 16px;
+}
+
+.medium svg {
+  width: 24px;
+  height: 24px;
+}
+
+.large svg {
+  width: 32px;
+  height: 32px;
 }

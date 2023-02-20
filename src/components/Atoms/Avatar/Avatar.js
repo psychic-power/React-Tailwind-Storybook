@@ -1,56 +1,48 @@
-import { UserIcon } from "@heroicons/react/24/solid";
-import { useEffect, useState } from "react";
-import { BgColor, TextColor } from "../../../utils/theme";
-import { PMedium } from "../Typography/Typography";
+import { UserIcon } from "../../../icons/icon";
+import { Color, Size } from "../../../utils/theme";
 
 /**
  * This component represents a user avatars.
  *
  * @param {string} username - If the image not exist, show avatar with name (e.g John Doe - JD)
  * @param {string} image - The image source (e.g https://images/abc.png).
- * @param {number} size - The variant of the avatar (it increases with 4x pixel of value).
+ * @param {number} size - The variant of the avatar (Size.sm, Size.md, Size.lg etc). Default is Size.lg viz 24px
  * @param rest - The rest of other props. It can include custom style, key, id, alt etc
  */
 
 export default function Avatar({ username, image, size, ...rest }) {
-  const [nameAvatar, setNameAvatar] = useState("");
-  useEffect(() => {
-    setNameAvatar(username?.split(" ")?.map((item) => item[0]));
-    if (nameAvatar?.length > 2) {
-      setNameAvatar(nameAvatar[0] + nameAvatar[1]);
-    }
-  }, [username]);
-
   return (
     <>
       {image ? (
         <div
-          className={`ring-gray-200 ring-1 rounded-full w-fit w-${size} h-${size}`}
+          className={` rounded-full w-fit ${Size.general[size] ?? Size.general.md} ${
+            Color.ring.divider
+          } ring-1`}
           {...rest}
         >
           <img
             src={image}
             alt="avatar"
-            className={`rounded-full w-${size} h-${size}`}
+            className={`rounded-full ${Size.general[size] ?? Size.general.md} ${Color.ring.rightDivider} ring-1`}
           />
         </div>
       ) : username ? (
         <div
-          className={`flex justify-center items-center rounded-full ring-gray-200 ring-1 w-${size} h-${size} ${BgColor["altDark"]}`}
+          className={`flex justify-center items-center rounded-full ${
+            Size.general[size] ?? Size.general.md
+          } ${Color.background.altDark} ${Color.ring.rightDivider} ring-1`}
           {...rest}
         >
-          <PMedium color={"primaryDark"}>
-            {nameAvatar}
-          </PMedium>
+          <caption className={`${Color.text.primaryDark}`}>{username}</caption>
         </div>
       ) : (
         <div
-          className="rounded-full w-fit bg-surface-alt-light ring-gray-200 dark:ring-gray-50 ring-1"
+          className={`rounded-full w-fit ${Size.icon[size] ?? Size.icon.md} ${
+            Color.background.altLight
+          } ${Color.text.tetriaryLight} ${Color.ring.rightDivider} ${Color.icon} ring-1`}
           {...rest}
         >
-          <UserIcon
-            className={`w-${size} h-${size} p-1 text-content-tetriary-light`}
-          />
+          <UserIcon className="p-0.5" />
         </div>
       )}
     </>

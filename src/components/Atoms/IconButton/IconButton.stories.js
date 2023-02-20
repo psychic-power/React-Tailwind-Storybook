@@ -1,39 +1,44 @@
+import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, PlusIcon } from "../../../icons/icon";
 import IconButton from "./IconButton";
 
 export default {
   title: 'Components/Atoms/IconButton',
   component: IconButton,
+  argTypes: {
+    size: {
+      control: {
+        type: "select",
+      },
+      options: ["lg", "md", "sm"],
+    },
+  },
 }
 
 const Template = args => <IconButton {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  iconName: "PlusIcon",
-  size: 10,
+  icon: <PlusIcon />,
+  size: "lg"
 };
 
 export const UpIcon = Template.bind({});
 UpIcon.args = {
-  iconName: "ChevronUpIcon",
-  size: 10,
+  icon: <ChevronUpIcon />
 };
 
 export const DownIcon = Template.bind({});
 DownIcon.args = {
-  iconName: "ChevronDownIcon",
-  size: 10,
+  icon: <ChevronDownIcon />
 };
 
 export const LeftIcon = Template.bind({});
 LeftIcon.args = {
-  iconName: "ChevronLeftIcon",
-  size: 10,
+  icon: <ChevronLeftIcon />
 };
 
 export const RightIcon = Template.bind({});
 RightIcon.args = {
-  iconName: "ChevronRightIcon",
-  size: 10,
+  icon: <ChevronRightIcon />
 };
 
